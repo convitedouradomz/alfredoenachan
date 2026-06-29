@@ -1,0 +1,4339 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convite de Casamento | Alfredo & Nachan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Dancing+Script:wght@400;500;600;700&family=Parisienne&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="logoCD.jpg" />
+    <style>
+:root {
+  --verde-oliva: #000000;        /* PRETO */
+  --verde-oliva-suave: #1a1a1a;  /* PRETO SUAVE */
+  --verde-oliva-claro: #333333;  /* CINZA ESCURO */
+  --creme: #ffffff;              /* BRANCO */
+  --creme-claro: #f5f5f5;        /* BRANCO ACINZENTADO */
+  --branco: #ffffff;             /* BRANCO PURO */
+  --dourado: #d4af37;            /* DOURADO */
+  --dourado-claro: #e6c456;      /* DOURADO CLARO */
+  --cinza-escuro: #1a1a1a;       /* PRETO/CINZA */
+  --cinza-medio: #666666;        /* CINZA MÉDIO */
+}
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Cormorant Garamond", serif;
+        color: var(--cinza-escuro);
+        background-color: #faf8f5;
+        overflow-x: hidden;
+        line-height: 1.6;
+        font-weight: 400;
+      }
+
+      .oculto {
+        display: none !important;
+      }
+
+      .secao {
+        min-height: 100vh;
+        padding: 60px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        opacity: 0;
+        transform: translateY(40px);
+        transition:
+          opacity 1s cubic-bezier(0.19, 1, 0.22, 1),
+          transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      @media (max-width: 768px) {
+        .secao {
+          min-height: 90vh;
+          padding: 40px 10px;
+          transform: translateY(30px);
+          transition:
+            opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1),
+            transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+      }
+
+      .secao.visivel {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .conteudo-secao {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Playfair Display", serif;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 30px;
+        color: var(--verde-oliva);
+      }
+
+      h1 {
+        font-family: "Parisienne", cursive;
+        font-size: 4rem;
+        margin-bottom: 15px;
+        letter-spacing: 1px;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        position: relative;
+        padding-bottom: 20px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 2.2rem;
+          padding-bottom: 15px;
+        }
+      }
+
+      h2::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          var(--dourado),
+          transparent
+        );
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 768px) {
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      /* CAPA */
+     /* CAPA */
+/* CAPA */
+#capa {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.5));
+  color: var(--branco);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  opacity: 1 !important;
+  transform: none !important;
+  transition: opacity 0.8s ease !important;
+}
+
+/* Imagem de fundo separada */
+#capa::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("Capa.jpg") center/cover no-repeat;
+  z-index: -1;
+}
+      #capa.oculto {
+        display: none !important;
+      }
+
+      #capa::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle at center,
+          transparent 30%,
+          rgba(0, 0, 0, 0.4) 100%
+        );
+        pointer-events: none;
+      }
+
+      .capa-conteudo {
+        position: relative;
+        z-index: 2;
+        max-width: 900px;
+        padding: 20px;
+      }
+
+      #capa h1 {
+        font-family: "Parisienne", cursive;
+        font-size: 5.5rem;
+        margin-bottom: 15px;
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        line-height: 1.1;
+        letter-spacing: 2px;
+        animation: aparecer 2s ease-out;
+        color: #ffffff;
+      }
+
+      @media (max-width: 768px) {
+        #capa h1 {
+          font-size: 3.8rem;
+        }
+      }
+
+      #capa .separador-nomes {
+        font-family: "Great Vibes", cursive;
+        font-size: 3rem;
+        margin: 10px 0;
+        color: var(--dourado);
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        animation: aparecer 2.2s ease-out;
+        opacity: 0.9;
+      }
+
+      @media (max-width: 768px) {
+        #capa .separador-nomes {
+          font-size: 2.2rem;
+        }
+      }
+
+      #capa .data {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.8rem;
+        margin-top: 30px;
+        letter-spacing: 3px;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        animation: aparecer 2.4s ease-out;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 768px) {
+        #capa .data {
+          font-size: 1.4rem;
+          letter-spacing: 2px;
+        }
+      }
+
+      @keyframes aparecer {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      #btnAbrirConvite {
+        background: transparent;
+        color: var(--branco);
+        border: 2px solid var(--dourado);
+        padding: 16px 40px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        margin-top: 50px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+      }
+
+      @media (max-width: 768px) {
+        #btnAbrirConvite {
+          padding: 14px 35px;
+          font-size: 1.1rem;
+          margin-top: 40px;
+        }
+      }
+
+      #btnAbrirConvite::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(212, 175, 55, 0.3),
+          transparent
+        );
+        transition: left 0.7s ease;
+        z-index: -1;
+      }
+
+      #btnAbrirConvite:hover {
+        background-color: rgba(212, 175, 55, 0.1);
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        letter-spacing: 3px;
+      }
+
+      #btnAbrirConvite:hover::before {
+        left: 100%;
+      }
+
+      .seta-scroll {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: var(--dourado);
+        font-size: 1.8rem;
+        animation: flutuar 2s infinite ease-in-out;
+        opacity: 0.7;
+        cursor: pointer;
+        z-index: 10;
+      }
+
+      @keyframes flutuar {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+
+        50% {
+          transform: translateX(-50%) translateY(10px);
+        }
+      }
+
+      /* MÚSICA E FOTO - SCROLL 2 (COM ANÉIS) */
+      #musica {
+        background-color: #faf8f5;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .com-aneis-esquerda {
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-family: "Dancing Script", cursive;
+        font-size: 2.8rem;
+        line-height: 1.2;
+        max-width: 900px;
+        margin: 0 auto 10px;
+        letter-spacing: 1px;
+        padding-bottom: 10px;
+        color: #8a9a5b;
+      }
+
+      @media (max-width: 768px) {
+        .com-aneis-esquerda {
+          font-size: 2.2rem;
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+      .com-aneis-esquerda::after {
+        display: none;
+      }
+
+      .aneis-icone {
+        position: relative;
+        margin-right: 25px;
+        font-size: 3.5rem;
+        color: var(--dourado);
+        flex-shrink: 0;
+        width: 80px;
+        height: 60px;
+      }
+
+      .aneis-icone img {
+  width: 70px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .aneis-icone {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .aneis-icone img {
+    width: 60px;
+  }
+}
+
+      .referencia-biblica {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.4rem;
+        color: var(--cinza-medio);
+        font-style: italic;
+        margin: -10px auto 30px;
+        text-align: center;
+        max-width: 700px;
+      }
+
+      @media (max-width: 768px) {
+        .referencia-biblica {
+          font-size: 1.2rem;
+          margin: -5px auto 25px;
+        }
+      }
+
+      .container-foto-musica {
+        position: relative;
+        max-width: 500px;
+        margin: 0 auto 40px;
+        z-index: 1;
+      }
+
+      @media (max-width: 768px) {
+        .container-foto-musica {
+          max-width: 90%;
+          margin-bottom: 30px;
+        }
+      }
+
+      .moldura-principal {
+        width: 100%;
+        height: 500px;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        transform: perspective(1000px) rotateY(0deg);
+        transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        background-color: #f3dbc3; 
+      }
+
+      @media (max-width: 768px) {
+        .moldura-principal {
+          height: 400px;
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+      }
+
+      .moldura-principal:hover {
+        transform: perspective(1000px) rotateY(-5deg);
+      }
+
+      .foto-casal-principal {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: sepia(0.1) contrast(1.05) brightness(1.05);
+      }
+
+      .moldura-principal::before,
+      .moldura-principal::after {
+        content: "";
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border: 2px solid var(--dourado);
+        z-index: 2;
+      }
+
+      @media (max-width: 768px) {
+        .moldura-principal::before,
+        .moldura-principal::after {
+          width: 30px;
+          height: 30px;
+          border-width: 1.5px;
+        }
+      }
+
+      .moldura-principal::before {
+        top: 15px;
+        left: 15px;
+        border-right: none;
+        border-bottom: none;
+      }
+
+      .moldura-principal::after {
+        bottom: 15px;
+        right: 15px;
+        border-left: none;
+        border-top: none;
+      }
+
+      .player-musica {
+        text-align: center;
+        margin-top: 30px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .player-musica p {
+        font-size: 1.4rem;
+        font-style: italic;
+        color: var(--cinza-medio);
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+      }
+
+      .player-musica p::before,
+      .player-musica p::after {
+        content: "♪";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--verde-oliva);
+        font-size: 1.5rem;
+      }
+
+      .player-musica p::before {
+        left: -30px;
+      }
+
+      .player-musica p::after {
+        right: -30px;
+      }
+
+      #btnTocarMusica {
+        background: transparent;
+        color: var(--verde-oliva);
+        border: 1.5px solid var(--verde-oliva);
+        padding: 10px 30px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 600;
+        transition: all 0.4s ease;
+        display: none;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+
+      #btnTocarMusica.visivel {
+        display: block;
+      }
+
+      #btnTocarMusica:hover {
+        background-color: var(--verde-oliva);
+        color: var(--branco);
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px var(--sombra-suave);
+      }
+
+      /* TEXTO ROMÂNTICO - SCROLL 3 */
+     #texto-romantico {
+  background: #faf8f5;
+  position: relative;
+  overflow: hidden;
+}
+
+      .texto-destaque {
+        font-family: "Great Vibes", cursive;
+        font-size: 3.2rem;
+        text-align: center;
+        color: var(--verde-oliva);
+        margin: 30px auto 40px;
+        max-width: 800px;
+        line-height: 1.3;
+        position: relative;
+        padding: 20px 30px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition:
+          opacity 1s ease,
+          transform 1s ease;
+        transition-delay: 0.3s;
+      }
+
+      @media (max-width: 768px) {
+        .texto-destaque {
+          font-size: 2.5rem;
+          padding: 15px 20px;
+          margin: 20px auto 30px;
+        }
+      }
+
+      .texto-destaque.visivel {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .texto-destaque::before,
+      .texto-destaque::after {
+        content: "❧";
+        position: absolute;
+        color: var(--dourado);
+        font-size: 2.2rem;
+        opacity: 0.7;
+      }
+
+      .texto-destaque::before {
+        top: 0;
+        left: 5px;
+      }
+
+      .texto-destaque::after {
+        bottom: 0;
+        right: 5px;
+        transform: rotate(180deg);
+      }
+
+      /* SAUDAÇÃO - SCROLL 4 */
+      #saudacao {
+        background-color: #faf8f5;
+        position: relative;
+      }
+
+      .texto-saudacao {
+        font-size: 1.5rem;
+        font-style: italic;
+        max-width: 700px;
+        margin: 0 auto 20px;
+        line-height: 1.8;
+        position: relative;
+        z-index: 1;
+        color: var(--cinza-escuro);
+        padding: 0 15px;
+      }
+
+      .texto-saudacao-destaque {
+        font-family: "Dancing Script", cursive;
+        font-size: 1.6rem;
+        color: var(--verde-oliva);
+        margin: 15px 0;
+        display: block;
+      }
+
+      .calendario-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+      }
+
+      .calendario-pequeno {
+  width: 100%;
+  max-width: 350px;
+  background-color: var(--creme-claro);
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+  border: 1px solid var(--verde-oliva-claro);
+  margin-bottom: 15px;
+}
+
+      .cabecalho-calendario {
+        background: linear-gradient(
+          135deg,
+          var(--verde-oliva),
+          var(--verde-oliva-suave)
+        );
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-family: "Playfair Display", serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .dias-calendario {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 10px;
+  gap: 4px;
+  overflow-x: auto;
+}
+
+.dia-semana {
+  text-align: center;
+  font-weight: 600;
+  color: var(--cinza-medio);
+  padding: 5px 2px;
+  font-size: 0.8rem;
+}
+
+.dia-numero {
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 50%;
+  cursor: default;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+      .dia-numero:hover {
+        background-color: var(--verde-oliva-claro);
+      }
+
+      .dia-casamento {
+        background-color:#ff6b6b;
+        color: #000000;
+        font-weight: 700;
+        position: relative;
+        animation: pulsarCalendario 2s infinite;
+      }
+
+      .dia-casamento::after {
+        content: "♥";
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        font-size: 0.8rem;
+      }
+
+      .dia-vazio {
+        visibility: hidden;
+      }
+
+      @keyframes pulsarCalendario {
+        0%,
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+        }
+
+        50% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+        }
+      }
+
+      .data-calendario-grande {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.5rem;
+        color: var(--verde-oliva);
+        margin-top: 10px;
+        padding: 12px 25px;
+        background-color: rgba(138, 154, 91, 0.08);
+        border-radius: 10px;
+        letter-spacing: 1px;
+        font-weight: 600;
+      }
+
+      .data-calendario-grande i {
+        margin-right: 10px;
+        color: var(--verde-oliva);
+        font-size: 1.2rem;
+      }
+
+      /* OS NOIVOS - SCROLL 5 */
+    #os-noivos {
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+}
+
+      .container-noivos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      @media (max-width: 768px) {
+        .container-noivos {
+          gap: 30px;
+          margin-top: 30px;
+        }
+      }
+
+      .noivo {
+        flex: 1;
+        min-width: 250px;
+        max-width: 320px;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(-100px) translateY(20px);
+        transition:
+          opacity 1s ease,
+          transform 1s ease;
+      }
+
+      .noiva {
+        flex: 1;
+        min-width: 250px;
+        max-width: 320px;
+        text-align: center;
+        opacity: 0;
+        transform: translateX(100px) translateY(20px);
+        transition:
+          opacity 1s ease,
+          transform 1s ease;
+      }
+
+      .noivo.visivel {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+      }
+
+      .noiva.visivel {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+      }
+
+      @media (max-width: 768px) {
+        .noivo,
+        .noiva {
+          min-width: 100%;
+          transform: translateX(0) translateY(50px);
+        }
+
+        .noivo.visivel,
+        .noiva.visivel {
+          transform: translateX(0) translateY(0);
+        }
+      }
+
+      .container-foto-noivo,
+      .container-foto-noiva {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 20px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        border: 6px solid var(--branco);
+      }
+
+      @media (max-width: 768px) {
+        .container-foto-noivo,
+        .container-foto-noiva {
+          width: 180px;
+          height: 180px;
+        }
+      }
+
+      .foto-noivo,
+      .foto-noiva {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.8s ease;
+      }
+
+      .container-foto-noivo:hover .foto-noivo,
+      .container-foto-noiva:hover .foto-noiva {
+        transform: scale(1.05);
+      }
+
+      .nome-noivo,
+      .nome-noiva {
+        font-family: "Playfair Display", serif;
+        font-size: 1.8rem;
+        color: #ffffff;
+        margin-bottom: 10px;
+        letter-spacing: 0.5px;
+      }
+
+      .pais {
+        font-size: 1.2rem;
+        color: var(--cinza-medio);
+        line-height: 1.5;
+      }
+
+      .pais strong {
+        color: var(--verde-oliva);
+        font-weight: 600;
+      }
+
+      .coracao-central {
+        margin: 0 20px;
+        font-size: 3.5rem;
+        color: #e21212;
+        opacity: 0;
+        transform: scale(0.5);
+        transition:
+          opacity 1s ease,
+          transform 1s ease;
+        transition-delay: 0.5s;
+      }
+
+      @media (max-width: 768px) {
+        .coracao-central {
+          margin: 20px 0;
+          transform: rotate(90deg) scale(0.5);
+          font-size: 3rem;
+        }
+      }
+
+      .coracao-central.visivel {
+        opacity: 1;
+        transform: scale(1);
+        animation: pulsar 1.5s infinite ease-in-out;
+      }
+
+      @media (max-width: 768px) {
+        .coracao-central.visivel {
+          transform: rotate(90deg) scale(1);
+        }
+      }
+
+      @keyframes pulsar {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+
+        50% {
+          transform: scale(1.1);
+          opacity: 1;
+        }
+      }
+
+      /* AGENDA - SCROLL 6 (COM ANIMAÇÃO ZIG-ZAG) */
+      #agenda {
+        background-color: #faf8f5;
+        position: relative;
+      }
+
+      .timeline-elegante {
+        max-width: 900px;
+        margin: 50px auto 0;
+        position: relative;
+      }
+
+      .timeline-elegante::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1px;
+        height: 100%;
+        background: linear-gradient(
+          to bottom,
+          transparent,
+          var(--dourado),
+          var(--verde-oliva),
+          var(--dourado),
+          transparent
+        );
+      }
+
+      @media (max-width: 768px) {
+        .timeline-elegante::before {
+          left: 40px;
+        }
+      }
+
+      .evento-elegante {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        opacity: 0;
+      }
+
+      .evento-elegante:nth-child(odd) {
+        flex-direction: row;
+        transform: translateX(-100px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .evento-elegante:nth-child(even) {
+        flex-direction: row-reverse;
+        transform: translateX(100px);
+        transition:
+          opacity 0.8s ease,
+          transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+
+      .evento-elegante.visivel {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      @media (max-width: 768px) {
+        .evento-elegante,
+        .evento-elegante:nth-child(odd),
+        .evento-elegante:nth-child(even) {
+          flex-direction: row;
+          transform: translateX(-50px);
+        }
+
+        .evento-elegante.visivel {
+          transform: translateX(0);
+        }
+      }
+
+      .circulo-tempo {
+        width: 18px;
+        height: 18px;
+        background-color: var(--verde-oliva);
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        border: 3px solid var(--branco);
+        box-shadow: 0 0 0 3px var(--dourado-claro);
+      }
+
+      @media (max-width: 768px) {
+        .circulo-tempo {
+          left: 40px;
+        }
+      }
+
+      .icone-evento-elegante {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #6d4830, #8b5e3c);  /* Círculo turquesa */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;  /* Ícone dentro fica branco */
+
+
+        font-size: 1.8rem;
+        z-index: 3;
+        flex-shrink: 0;
+        box-shadow: 0 8px 20px rgba(138, 154, 91, 0.25);
+        position: relative;
+        overflow: hidden;
+        opacity: 0;
+        transform: scale(0.5);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+
+      .evento-elegante.visivel .icone-evento-elegante {
+        opacity: 1;
+        transform: scale(1);
+        transition-delay: 0.3s;
+      }
+
+      .icone-evento-elegante::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          135deg,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        border-radius: 50%;
+      }
+
+      .info-evento-elegante {
+        width: 48%;
+        padding: 30px 25px;
+        background-color: var(--creme-claro);
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+        position: relative;
+        border-top: 3px solid var(--dourado);
+        opacity: 0;
+        transform: translateY(20px);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+
+      .evento-elegante.visivel .info-evento-elegante {
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0.5s;
+      }
+
+      .evento-elegante:nth-child(odd) .info-evento-elegante {
+        margin-left: 35px;
+        text-align: left;
+      }
+
+      .evento-elegante:nth-child(even) .info-evento-elegante {
+        margin-right: 35px;
+        text-align: right;
+      }
+
+      @media (max-width: 768px) {
+        .icone-evento-elegante {
+          position: absolute;
+          left: 40px;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 60px;
+          font-size: 1.6rem;
+        }
+
+        .info-evento-elegante,
+        .evento-elegante:nth-child(odd) .info-evento-elegante,
+        .evento-elegante:nth-child(even) .info-evento-elegante {
+          width: calc(100% - 90px);
+          margin-left: 90px;
+          text-align: left;
+          padding: 25px 20px;
+        }
+      }
+
+      .hora-evento-elegante {
+        font-weight: 700;
+        color: var(--dourado);
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+        font-family: "Playfair Display", serif;
+      }
+
+      .titulo-evento-elegante {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+        font-family: "Playfair Display", serif;
+        color: var(--verde-oliva);
+      }
+
+      .local-evento-elegante {
+        font-style: italic;
+        margin-bottom: 18px;
+        color: var(--cinza-medio);
+        font-size: 1.15rem;
+      }
+
+      .btn-mapa-elegante {
+        background: transparent;
+        color: var(--verde-oliva);
+        border: 1.5px solid var(--verde-oliva);
+        padding: 9px 22px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.05rem;
+        font-weight: 600;
+        transition: all 0.4s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        text-decoration: none;
+      }
+
+      .btn-mapa-elegante:hover {
+        background-color: var(--verde-oliva);
+        color: var(--branco);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px var(--sombra-suave);
+      }
+
+      /* CONTADOR - SCROLL 7 */
+      #contador {
+  background: #faf8f5;
+  position: relative;
+  overflow: hidden;
+}
+
+      .contador-container-elegante {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 40px;
+        position: relative;
+        z-index: 1;
+      }
+
+      @media (max-width: 768px) {
+        .contador-container-elegante {
+          gap: 15px;
+          margin-top: 30px;
+        }
+      }
+
+      .contador-item-elegante {
+        text-align: center;
+        min-width: 130px;
+        padding: 25px 15px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 12px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        transition:
+          opacity 0.6s ease,
+          transform 0.6s ease;
+      }
+
+      .contador-item-elegante.visivel {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+
+      @media (max-width: 768px) {
+        .contador-item-elegante {
+          min-width: 110px;
+          padding: 20px 10px;
+        }
+      }
+
+      .contador-numero-elegante {
+        font-size: 3.2rem;
+        font-weight: 700;
+        color: var(--verde-oliva);
+        line-height: 1;
+        margin-bottom: 8px;
+        font-family: "Playfair Display", serif;
+      }
+
+      @media (max-width: 768px) {
+        .contador-numero-elegante {
+          font-size: 2.5rem;
+        }
+      }
+
+      .contador-label-elegante {
+        font-size: 1.1rem;
+        color: var(--cinza-medio);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+      }
+
+      /* GALERIA - SCROLL 8 (COM EFEITO PANORAMA) */
+      /* GALERIA - SCROLL 8 */
+#galeria {
+  background-color: #faf8f5;
+  position: relative;
+}
+
+.galeria-container-elegante {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.galeria-item-elegante {
+  height: 280px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  position: relative;
+  opacity: 0;  /* MUDAR de 0 para 1 */
+  transform: translateY(-80px) rotate(-8deg);  /* REMOVER animação */
+  border: none;
+}
+
+.galeria-img-elegante {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  /* Mostra a foto completa sem zoom */
+  background-color: var(--cor-fundo-claro);  /* Fundo para preencher espaços */
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .galeria-container-elegante {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    margin-top: 30px;
+  }
+  
+  .galeria-item-elegante {
+    height: 180px;
+  }
+}
+      .galeria-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .galeria-item-elegante:hover .galeria-overlay {
+        opacity: 1;
+      }
+
+      .galeria-overlay i {
+        color: white;
+        font-size: 2.2rem;
+        opacity: 0.8;
+      }
+
+      /* MODAL GALERIA */
+      .modal-elegante {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.92);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .modal-elegante.ativo {
+        display: flex;
+        opacity: 1;
+      }
+
+      .modal-img-elegante {
+        max-width: 90%;
+        max-height: 85%;
+        object-fit: contain;
+        transform: scale(0.9);
+        transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        border-radius: 5px;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-elegante.ativo .modal-img-elegante {
+        transform: scale(1);
+      }
+
+      .fechar-modal-elegante {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        opacity: 0.7;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+
+      .fechar-modal-elegante:hover {
+        color: var(--dourado);
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+
+     /* RSVP - SCROLL 9 */
+#rsvp {
+  background-color: #faf8f5;
+  position: relative;
+}
+
+.rsvp-container-elegante {
+  text-align: center;
+  max-width: 650px;
+  margin: 40px auto 0;
+  padding: 35px 30px;
+  background-color: var(--creme-claro);
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+  border-top: 3px solid var(--dourado);
+  position: relative;
+  z-index: 1;
+}
+
+.btn-whatsapp-elegante {
+  background: linear-gradient(135deg, #25d366, #1da851);
+  color: white;
+  border: none;
+  padding: 16px 45px;
+  font-size: 1.3rem;
+  border-radius: 50px;
+  margin-top: 25px;
+  cursor: pointer;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.25);
+  letter-spacing: 0.5px;
+}
+
+.btn-whatsapp-elegante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.35);
+  letter-spacing: 1px;
+}
+
+/* ESTILOS DO FORMULÁRIO DE CONFIRMAÇÃO */
+.form-confirmacao {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--verde-oliva);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid var(--verde-oliva-claro);
+  border-radius: 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  background-color: var(--branco);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--dourado);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.opcoes-presenca {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.opcoes-presenca label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.opcoes-presenca input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--dourado);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+      /* MENSAGENS - SCROLL 10 (COM SISTEMA DE ABAS) */
+     #mensagens {
+  background: #faf8f5;
+  position: relative;
+}
+
+      .abas-mensagens-container {
+        max-width: 800px;
+        margin: 30px auto 0;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+        overflow: hidden;
+        border: 1px solid var(--verde-oliva-claro);
+      }
+
+      .abas-header {
+        display: flex;
+        border-bottom: 1px solid var(--creme);
+        background-color: var(--creme-claro);
+      }
+
+      .aba {
+        flex: 1;
+        padding: 18px 20px;
+        text-align: center;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--cinza-medio);
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .aba.ativa {
+        color: var(--verde-oliva);
+        background-color: white;
+      }
+
+      .aba.ativa::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--dourado), var(--verde-oliva));
+      }
+
+      .aba:hover:not(.ativa) {
+        background-color: rgba(138, 154, 91, 0.05);
+      }
+
+      .aba-conteudo {
+        padding: 0;
+        display: none;
+      }
+
+      .aba-conteudo.ativa {
+        display: block;
+      }
+
+      .form-mensagem-elegante {
+        padding: 35px 30px 25px;
+      }
+
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .form-grid {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-group label {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.2rem;
+        color: var(--verde-oliva);
+        margin-bottom: 8px;
+        font-weight: 600;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 15px;
+        font-size: 1.2rem;
+        font-family: "Cormorant Garamond", serif;
+        border: 1.5px solid var(--verde-oliva-claro);
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.8);
+        transition: all 0.4s ease;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+      }
+
+      input:focus,
+      select:focus,
+      textarea:focus {
+        outline: none;
+        border-color: var(--verde-oliva);
+        box-shadow: 0 10px 30px rgba(138, 154, 91, 0.12);
+        background-color: white;
+      }
+
+      input::placeholder,
+      textarea::placeholder {
+        color: var(--cinza-medio);
+        font-style: italic;
+      }
+
+      textarea {
+        width: 100%;
+        height: 160px;
+        resize: vertical;
+        margin-bottom: 25px;
+      }
+
+      .btn-enviar-elegante {
+        background: linear-gradient(
+          135deg,
+          var(--verde-oliva),
+          var(--verde-oliva-suave)
+        );
+        color: white;
+        border: none;
+        padding: 14px 45px;
+        font-size: 1.3rem;
+        border-radius: 50px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 700;
+        display: block;
+        margin: 0 auto;
+        transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        box-shadow: 0 8px 25px rgba(138, 154, 91, 0.25);
+        letter-spacing: 0.5px;
+      }
+
+      .btn-enviar-elegante:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 35px rgba(138, 154, 91, 0.35);
+        letter-spacing: 1px;
+      }
+
+      .ultimas-mensagens-container {
+        padding: 25px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-top: 1px solid var(--creme);
+      }
+
+      .mensagens-container {
+        max-height: 400px;
+        overflow-y: auto;
+        padding: 25px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+
+      .mensagem-card {
+        background-color: var(--creme-claro);
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid var(--dourado);
+        opacity: 0;
+        transform: translateY(20px);
+        animation: aparecerMensagem 0.8s ease forwards;
+      }
+
+      @keyframes aparecerMensagem {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .mensagem-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid var(--creme);
+      }
+
+      .mensagem-autor {
+        font-family: "Playfair Display", serif;
+        font-size: 1.4rem;
+        color: var(--verde-oliva);
+        font-weight: 600;
+      }
+
+      .mensagem-relacao {
+        font-size: 1.1rem;
+        color: var(--cinza-medio);
+        font-style: italic;
+        background-color: rgba(138, 154, 91, 0.08);
+        padding: 4px 12px;
+        border-radius: 50px;
+      }
+
+      .mensagem-texto {
+        font-size: 1.25rem;
+        line-height: 1.7;
+        color: var(--cinza-escuro);
+        font-style: italic;
+      }
+
+      .mensagem-data {
+        text-align: right;
+        font-size: 1rem;
+        color: var(--cinza-medio);
+        margin-top: 15px;
+        font-style: italic;
+      }
+
+      .sem-mensagens {
+        text-align: center;
+        padding: 40px 20px;
+        color: var(--cinza-medio);
+        font-size: 1.3rem;
+        font-style: italic;
+      }
+
+      .popup-mensagem-elegante {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        background-color: white;
+        padding: 40px 35px;
+        border-radius: 15px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        z-index: 1100;
+        text-align: center;
+        max-width: 450px;
+        width: 90%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        border-top: 4px solid var(--dourado);
+      }
+
+      .popup-mensagem-elegante.ativo {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .popup-mensagem-elegante h3 {
+        color: var(--verde-oliva);
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      /* OVERLAY PARA MODAIS */
+      .overlay-elegante {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.85);
+        z-index: 1000;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .overlay-elegante.ativo {
+        display: block;
+        opacity: 1;
+      }
+
+      /* PRESENTES - SCROLL 11 */
+      #presentes {
+        background-color: #faf8f5;
+        position: relative;
+      }
+
+      .opcoes-presentes-elegante {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .btn-presente-elegante {
+        background: linear-gradient(135deg, var(--creme-claro), white);
+        border: 1.5px solid var(--verde-oliva-claro);
+        padding: 22px 35px;
+        border-radius: 12px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--verde-oliva);
+        transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+        min-width: 220px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .btn-presente-elegante::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg, var(--dourado), var(--verde-oliva));
+      }
+
+      .btn-presente-elegante:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        border-color: var(--verde-oliva);
+      }
+
+      .btn-presente-elegante i {
+        font-size: 2.2rem;
+        color: var(--dourado);
+      }
+
+      /* MODAIS PRESENTES */
+      .modal-presente-elegante {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.8);
+        background-color: white;
+        padding: 35px 30px;
+        border-radius: 15px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+        z-index: 1100;
+        max-width: 500px;
+        width: 90%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        border-top: 4px solid var(--dourado);
+      }
+
+      .modal-presente-elegante.ativo {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .info-pagamento-elegante {
+        margin-top: 20px;
+      }
+
+      .metodo-pagamento-elegante {
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        padding: 18px;
+        background-color: var(--creme-claro);
+        border-radius: 10px;
+        border-left: 3px solid var(--dourado);
+        transition: transform 0.3s ease;
+      }
+
+      .metodo-pagamento-elegante:hover {
+        transform: translateX(5px);
+        background-color: rgba(138, 154, 91, 0.05);
+      }
+
+      .metodo-pagamento-elegante i {
+        font-size: 2.2rem;
+        color: var(--verde-oliva);
+        margin-right: 18px;
+        min-width: 45px;
+      }
+
+      .fechar-modal-presente-elegante {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: var(--cinza-medio);
+        transition: color 0.3s ease;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+
+      .fechar-modal-presente-elegante:hover {
+        color: var(--verde-oliva);
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+
+      /* RODAPÉ - SCROLL FINAL */
+#rodape {
+  background: #f2e7d5;  /* Cor que você escolheu */
+  color: white;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  overflow: hidden;
+  min-height: auto;
+  width: 100%;
+  margin: 0;   /* Remove o mínimo de altura */
+}
+
+.assinatura-elegante {
+  font-family: "Parisienne", cursive;
+  font-size: 1.4rem;
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
+.iniciais-elegante {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  margin: 8px 0 12px;
+  color: #000000;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .iniciais-elegante {
+    font-size: 2rem;
+    letter-spacing: 8px;
+  }
+}
+
+.logo-rodape-elegante {
+  max-width: 80px !important;
+  margin: 8px auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.instagram-texto {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;  /* Texto preto para contrastar com fundo claro */
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  text-decoration: none;
+  margin-top: 12px;
+  padding: 6px 18px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.instagram-texto i {
+  font-size: 1rem;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.instagram-texto:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: #000000;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.instagram-texto:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.texto-rodape-elegante {
+  font-size: 0.85rem;
+  margin-top: 12px;
+  opacity: 0.8;
+  position: relative;
+  z-index: 1;
+  line-height: 1.4;
+  color: #000000;  /* Preto para contrastar */
+}
+
+/* Ajuste do título do casal no rodapé */
+#rodape h1 {
+  font-size: 2rem !important;
+  margin-bottom: 5px !important;
+  color: #000000 !important;  /* Preto para contrastar com fundo claro */
+}
+
+/* Ajuste do parágrafo de créditos */
+#rodape p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #000000;  /* Preto para contrastar */
+}
+
+/* Texto "Com amor" */
+#rodape .assinatura-elegante {
+  color: #000000 !important;
+}
+
+/* Texto da música */
+#rodape p[style*="color: var(--dourado-claro)"] {
+  color: #000000 !important;
+}
+      /* LINHA DECORATIVA PARA OS PAIS */
+      .linha-pais {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c9a03d, #c9a03d, #c9a03d);
+  margin: 12px auto 15px;
+  border-radius: 2px;
+}
+
+      /* TEXTO DOS PAIS COM LETRA PRETA */
+      .pais-preto {
+        font-size: 1.4rem;
+        color: #ffffff !important;
+        text-align: center;
+        line-height: 1.6;
+        margin-top: 8px;
+      }
+
+      .pais-preto strong {
+        color: #ffffff;
+        font-weight: 650;
+      }
+
+      /* ESTILOS PARA LISTA DE PRESENTES */
+      .categoria-presentes {
+        margin-bottom: 40px;
+      }
+
+      .titulo-categoria {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: var(--verde-oliva);
+        margin: 25px 0 15px;
+        padding-bottom: 8px;
+        border-bottom: 2px solid var(--dourado);
+        display: inline-block;
+      }
+
+      .lista-presentes {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 15px;
+        margin-bottom: 30px;
+      }
+
+      .item-presente {
+        background-color: var(--creme-claro);
+        border-radius: 10px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: all 0.3s ease;
+        border-left: 4px solid var(--dourado);
+      }
+
+      .item-presente span {
+        font-size: 1.2rem;
+        color: var(--cinza-escuro);
+      }
+
+      .btn-escolher-presente {
+        background: linear-gradient(
+          135deg,
+          var(--verde-oliva),
+          var(--verde-oliva-suave)
+        );
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .btn-escolher-presente:hover {
+        transform: scale(1.05);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .item-presente.escolhido {
+        background-color: #e0e0e0;
+        opacity: 0.6;
+        text-decoration: line-through;
+      }
+
+      .item-presente.escolhido .btn-escolher-presente {
+        background: #999;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .item-presente.escolhido .btn-escolher-presente:hover {
+        transform: none;
+        box-shadow: none;
+      }
+
+      .mensagem-presente-escolhido {
+        text-align: center;
+        margin-top: 30px;
+        padding: 15px;
+        background-color: var(--verde-oliva-claro);
+        border-radius: 10px;
+        color: var(--cinza-escuro);
+        font-size: 1.2rem;
+      }
+
+      .mensagem-presente-escolhido i {
+        color: var(--dourado);
+        margin-right: 10px;
+      }
+
+      .aviso-unico-presente {
+        text-align: center;
+        background-color: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 12px;
+        margin-bottom: 25px;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        color: #856404;
+      }
+      /* CORREÇÃO DO CALENDÁRIO - CELULAR */
+@media (max-width: 768px) {
+  .calendario-pequeno {
+    width: auto;
+    max-width: 320px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+  
+  .dias-calendario {
+    min-width: 280px;
+    gap: 4px;
+    padding: 10px;
+  }
+  
+  .dia-semana {
+    font-size: 0.7rem;
+    padding: 5px 0;
+  }
+  
+  .dia-numero {
+    font-size: 0.8rem;
+    padding: 8px 0;
+  }
+}
+
+/* Esconder o botão antigo de tocar música */
+#btnTocarMusica {
+  display: none !important;
+}
+/* ÍCONE PULSANTE ACIMA DO TÍTULO */
+.icone-pulsante {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: pulsarConvite 1.5s infinite ease-in-out;
+}
+
+.icone-pulsante i {
+  font-size: 3.5rem;
+  color: var(--verde-oliva);
+  /* REMOVER o background e o padding e o border-radius */
+}
+
+@keyframes pulsarConvite {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .icone-pulsante i {
+    font-size: 2.5rem;
+  }
+}
+/* ANIMAÇÃO SEJA BEM-VINDO - APARECER GRADUALMENTE */
+.bem-vindo-container {
+  text-align: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.bem-vindo-titulo {
+  font-family: "Playfair Display", serif;
+  font-size: 3.0rem;
+  color: var(--verde-oliva);
+  margin-bottom: 0;
+  text-shadow: 0 2px 5px rgba(138, 154, 91, 0.3);
+  animation: fadeInDown 1.5s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  30% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .bem-vindo-titulo {
+    font-size: 2rem;
+  }
+}
+/* ANIMAÇÃO DA FRASE DO AMOR - SOBE DE BAIXO */
+.frase-amor {
+  font-family: "Dancing Script", cursive;
+  font-size: 2.8rem;
+  line-height: 1.2;
+  color: #000000;
+  text-align: center;
+  margin-top: 20px;
+  animation: subirDeBaixo 1.5s ease-out 0.8s forwards;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+@keyframes subirDeBaixo {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .frase-amor {
+    font-size: 2rem;
+  }
+}
+/* RODAPÉ MAIS ESTREITO */
+#rodape .conteudo-secao {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.logo-rodape-elegante {
+  max-width: 100px !important;
+  margin: 15px auto;
+}
+
+.iniciais-elegante {
+  font-size: 1.8rem;
+  letter-spacing: 8px;
+}
+
+@media (max-width: 768px) {
+  .iniciais-elegante {
+    font-size: 2rem;
+    letter-spacing: 6px;
+  }
+}
+/* ÍCONE PRESENTE PULSANTE */
+.icone-presente-pulsante {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icone-presente-pulsante i {
+  font-size: 3.5rem;
+  color: var(--verde-oliva);
+  animation: pulsarPresente 1.2s infinite ease-in-out;
+  display: inline-block;
+}
+
+@keyframes pulsarPresente {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .icone-presente-pulsante i {
+    font-size: 2.5rem;
+  }
+}
+/* CELULAR - foto da capa completa */
+@media (max-width: 768px) {
+  #capa::after {
+    background: url("Capa.jpg") center/cover no-repeat;
+    background-size: cover;
+  }
+}
+#os-noivos h2 {
+  color:#ffffff;  /* Dourado */
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+/* CORAÇÕES FLUTUANTES - EFEITO PREMIUM */
+.heart-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;  /* Não interfere nos cliques */
+  z-index: 1;
+  overflow: hidden;
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: -50px;
+  font-size: 0;
+  opacity: 0;
+  animation: floatHeart 12s ease-in-out forwards;
+  pointer-events: none;
+}
+
+.floating-heart i {
+  font-size: 0;
+  color: rgba(54, 34, 24, 0.7);  /* Cinza escuro translúcido */
+  transition: all 0.3s ease;
+}
+
+/* Animações diferentes para cada coração */
+@keyframes floatHeart {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  30% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(var(--move-x, 50px)) translateY(-100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Responsivo - esconder em dispositivos muito lentos se necessário */
+@media (max-width: 768px) {
+  .floating-heart i {
+    font-size: 0;
+  }
+}
+/* Garantir que o body não tenha margens que afetem o rodapé */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Forçar o rodapé a ocupar toda a largura */
+#rodape {
+  left: 0;
+  right: 0;
+  width: 100vw !important;
+  position: relative;
+  margin-left: calc(-50vw + 50%) !important;
+  margin-right: calc(-50vw + 50%) !important;
+}
+
+/* BOTÃO DE MÚSICA - VERSÃO FINAL E DEFINITIVA */
+#botaoMusica.botao-musica-flutuante {
+  position: fixed !important;
+  clip: auto !important;
+  clip-path: none !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  width: 55px !important;
+  height: 55px !important;
+  background: #000000 !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  cursor: pointer !important;
+  z-index: 999999999 !important;
+  border: 2px solid #d4af37 !important;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: auto !important;
+}
+
+#botaoMusica.botao-musica-flutuante i {
+  font-size: 1.8rem !important;
+  color: white !important;
+}
+
+#botaoMusica.botao-musica-flutuante:hover {
+  transform: scale(1.1) !important;
+}
+#botaoMusica {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  clip-path: none !important;
+}
+#modalDressCode {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#modalDressCode.ativo {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+  </head>
+
+  <body>
+    <!-- CAPA - SCROLL 1 -->
+    <section id="capa" class="secao visivel">
+      <div class="capa-conteudo">
+        <h1>Alfredo</h1>
+        <div class="separador-nomes">&</div>
+        <h1>Nachan</h1>
+        <p class="data">04 de Setembro de 2026</p>
+        <button id="btnAbrirConvite">Abrir Convite</button>
+      </div>
+      <div
+        class="seta-scroll"
+        onclick="
+          document
+            .getElementById('conteudoPrincipal')
+            .scrollIntoView({ behavior: 'smooth' })
+        "
+      >
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL (inicialmente oculto) -->
+    <div id="conteudoPrincipal" class="oculto">
+      <!-- MÚSICA E FOTO - SCROLL 2 -->
+      <section id="musica" class="secao">
+        <div class="conteudo-secao">
+          <div class="bem-vindo-container">
+ <h2 class="bem-vindo-titulo">Seja Bem-vindo(a)</h2>
+</div>
+
+<div style="text-align: center; margin-bottom: 20px;">
+  <img src="alianca.png" alt="Alianças" style="width: 60px; height: auto; display: inline-block;" />
+</div>
+
+<h2 class="frase-amor">
+  "Ela, virtuosa como a mulher de Provérbios 31. Ele, amoroso como o homem de Efésios 5."
+</h2>
+<p class="referencia-biblica">— Provérbios 31 & Efésios 5</p>
+
+          <div class="container-foto-musica">
+            <div class="moldura-principal">
+              <img
+                src="Foto1.jpg"
+                alt="Alfredo e Nachan"
+                class="foto-casal-principal"
+              />
+            </div>
+          </div>
+          <div class="player-musica">
+            <p>Ouça a música do nosso amor</p>
+            <button id="btnTocarMusica">Tocar música</button>
+            <audio id="musicaFundo" loop>
+              <source src="Ordinary .mp3" type="audio/mpeg" />
+              Seu navegador não suporta o elemento de áudio.
+            </audio>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEXTO ROMÂNTICO - SCROLL 3 -->
+      <section id="texto-romantico" class="secao">
+        <div class="conteudo-secao">
+          <h2>Uma Alma em Dois Corpos</h2>
+          <div class="texto-destaque">
+            "Sob a graça de Deus, encontraram um no outro o cumprimento de uma promessa: transformar o amor em aliança, a esperança em lar e a vida numa história que o tempo jamais apagará."
+          </div>
+          <p
+            style="
+              font-size: 1.2rem;
+              color: var(--cinza-medio);
+              font-style: italic;
+              max-width: 700px;
+              margin: 0 auto;
+            "
+          >
+            — O casal
+          </p>
+        </div>
+      </section>
+
+      <!-- OS NOIVOS - SCROLL 4 (AGORA APÓS ARISTÓTELES) -->
+      <section id="os-noivos" class="secao">
+        <div class="conteudo-secao">
+          <h2>Os Noivos</h2>
+          <div class="container-noivos">
+            <div class="noivo">
+              <div class="container-foto-noivo">
+                <img src="Noivo.jpg" alt="Alfredo" class="foto-noivo" />
+              </div>
+              <h3 class="nome-noivo">Alfredo Massambo</h3>
+              <div class="linha-pais"></div>
+              <p class="pais-preto">
+                <strong>Filho de:</strong><br />
+                António M. Massambo(em memória) e Ana Alfredo Tanga
+              </p>
+            </div>
+
+            <div class="coracao-central">
+              <i class="fas fa-heart"></i>
+            </div>
+
+            <div class="noiva">
+              <div class="container-foto-noiva">
+                <img src="Noiva.jpg" alt="Nachan" class="foto-noiva" />
+              </div>
+              <h3 class="nome-noiva"> Nachan Arroz </h3>
+              <div class="linha-pais"></div>
+              <p class="pais-preto">
+                <strong>Filha de:</strong><br />
+                Jaime L. Harrison Arroz (em memória) e Antónia João Paulo da Graça(em memória)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAUDAÇÃO - SCROLL 5 (ANTIGO SCROLL 3) -->
+      <section id="saudacao" class="secao">
+        <div class="conteudo-secao">
+          <div class="icone-pulsante">
+  <i class="fas fa-envelope-open-text"></i>
+</div>
+<h2>Celebre Connosco</h2>
+          <p class="texto-saudacao">
+  Com muita alegria convidamos ao nosso casamento
+</p>
+<!-- CARD GLASS DO CONVIDADO -->
+<div class="card-convidado">
+  <i class="fas fa-gift card-icone"></i>
+  <div class="nome-convidado" id="nomeConvidado">Convidado(a)</div>
+  <div class="convite-valido">
+    Convite válido para <span id="numPessoas">1</span> pessoa
+  </div>
+  <div class="nao-extensivo">Não extensivo a crianças</div>
+</div>
+          <div class="calendario-container">
+
+            <div class="calendario-pequeno">
+              <div class="cabecalho-calendario">Setembro de 2026</div>
+             <div class="dias-calendario">
+  <div class="dia-semana">Dom</div>
+  <div class="dia-semana">Seg</div>
+  <div class="dia-semana">Ter</div>
+  <div class="dia-semana">Qua</div>
+  <div class="dia-semana">Qui</div>
+  <div class="dia-semana">Sex</div>
+  <div class="dia-semana">Sáb</div>
+
+  <!-- Setembro 2026 começa numa Terça-feira -->
+  <div class="dia-numero dia-vazio"></div>
+  <div class="dia-numero dia-vazio"></div>
+  <div class="dia-numero">1</div>
+  <div class="dia-numero">2</div>
+  <div class="dia-numero">3</div>
+  <div class="dia-numero dia-casamento">4</div>
+  <div class="dia-numero">5</div>
+  <div class="dia-numero">6</div>
+  <div class="dia-numero">7</div>
+  <div class="dia-numero">8</div>
+  <div class="dia-numero">9</div>
+  <div class="dia-numero">10</div>
+  <div class="dia-numero">11</div>
+  <div class="dia-numero">12</div>
+  <div class="dia-numero">13</div>
+  <div class="dia-numero">14</div>
+  <div class="dia-numero">15</div>
+  <div class="dia-numero">16</div>
+  <div class="dia-numero">17</div>
+  <div class="dia-numero">18</div>
+  <div class="dia-numero">19</div>
+  <div class="dia-numero">20</div>
+  <div class="dia-numero">21</div>
+  <div class="dia-numero">22</div>
+  <div class="dia-numero">23</div>
+  <div class="dia-numero">24</div>
+  <div class="dia-numero">25</div>
+  <div class="dia-numero ">26</div>
+  <div class="dia-numero">27</div>
+  <div class="dia-numero">28</div>
+  <div class="dia-numero">29</div>
+  <div class="dia-numero">30</div>
+  <div class="dia-numero dia-vazio"></div>
+            </div>
+
+            <div class="data-calendario-grande">
+              <i class="fas fa-calendar-alt"></i> 04 de Setembro de 2026
+            </div>
+          </div>
+        </div>
+      </section>
+<p style="font-size:1.2rem; color:#000000; font-weight:600; margin:5px 0 0 0;">
+    A realizar-se na 6ª feira, 04 de Setembro de 2026, em Maputo - KATEMBE
+</p>
+                  <!-- AGENDA - SCROLL 6 -->
+      <section id="agenda" class="secao">
+        <div class="conteudo-secao">
+          <h2>Nosso Dia Especial</h2>
+          <div class="timeline-elegante">
+            
+            <!-- Evento 1: Welcome drinks -->
+            <div class="evento-elegante">
+              <div class="circulo-tempo"></div>
+              <div class="icone-evento-elegante">
+                <i class="fas fa-glass-cheers"></i>
+              </div>
+              <div class="info-evento-elegante">
+                <div class="hora-evento-elegante">14:30H</div>
+                <div class="titulo-evento-elegante">Welcome drinks</div>
+                <div class="local-evento-elegante">Farol Eventos Katembe</div>
+                <button
+                  class="btn-mapa-elegante"
+                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Ver no mapa
+                </button>
+              </div>
+            </div>
+
+            <!-- Evento 2: Cerimónia Civil -->
+            <div class="evento-elegante">
+              <div class="circulo-tempo"></div>
+              <div class="icone-evento-elegante">
+                <i class="fas fa-gavel"></i>
+              </div>
+              <div class="info-evento-elegante">
+                <div class="hora-evento-elegante">15H</div>
+                <div class="titulo-evento-elegante">Cerimónia Civil</div>
+                <div class="local-evento-elegante">Farol Eventos Katembe</div>
+                <button
+                  class="btn-mapa-elegante"
+                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Ver no mapa
+                </button>
+              </div>
+            </div>
+
+            <!-- Evento 3: Sessão de fotos -->
+            <div class="evento-elegante">
+              <div class="circulo-tempo"></div>
+              <div class="icone-evento-elegante">
+                <i class="fas fa-camera"></i>
+              </div>
+              <div class="info-evento-elegante">
+                <div class="hora-evento-elegante">16H</div>
+                <div class="titulo-evento-elegante">Sessão de fotos</div>
+                <div class="local-evento-elegante">Farol Eventos Katembe</div>
+                <button
+                  class="btn-mapa-elegante"
+                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Ver no mapa
+                </button>
+              </div>
+            </div>
+
+            <!-- Evento 4: Entrada dos noivos -->
+            <div class="evento-elegante">
+              <div class="circulo-tempo"></div>
+              <div class="icone-evento-elegante">
+                <i class="fas fa-door-open"></i>
+              </div>
+              <div class="info-evento-elegante">
+                <div class="hora-evento-elegante">17H</div>
+                <div class="titulo-evento-elegante">Entrada dos noivos ao salão</div>
+                <div class="local-evento-elegante">Farol Eventos Katembe</div>
+                <button
+                  class="btn-mapa-elegante"
+                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Ver no mapa
+                </button>
+              </div>
+            </div>
+
+            <!-- Evento 5: Copo d'Água -->
+            <div class="evento-elegante">
+              <div class="circulo-tempo"></div>
+              <div class="icone-evento-elegante">
+                <i class="fas fa-champagne-glasses"></i>
+              </div>
+              <div class="info-evento-elegante">
+                <div class="hora-evento-elegante">17:30H</div>
+                <div class="titulo-evento-elegante">Copo d'Água</div>
+                <div class="local-evento-elegante">Farol Eventos Katembe</div>
+                <button
+                  class="btn-mapa-elegante"
+                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                >
+                  <i class="fas fa-map-marker-alt"></i> Ver no mapa
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- DRESS CODE -->
+<section id="dress-code" class="secao">
+  <div class="conteudo-secao">
+    <div class="icone-pulsante">
+      <i class="fas fa-palette"></i>
+    </div>
+    <h2>Dress Code</h2>
+    <p style="font-size: 1.3rem; color: var(--cinza-medio); margin-bottom: 30px;">
+        Queremos que se sinta parte deste momento especial. Clique abaixo para descobrir as cores e o estilo que preparámos para este dia.
+    </p>
+    
+    <div style="text-align: center; margin-top: 20px;">
+      <button class="btn-presente-elegante" onclick="abrirModalDressCode()" style="background: linear-gradient(135deg, var(--creme-claro), white); color: var(--verde-oliva); margin: 0 auto; min-width: 200px;">
+        <i class="fas fa-images"></i>
+        Opções de Cores
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL DRESS CODE -->
+<div id="modalDressCode" class="modal-presente-elegante">
+  <span class="fechar-modal-presente-elegante" onclick="fecharModalDressCode()">&times;</span>
+  <h3 style="font-family: 'Playfair Display', serif; text-align: center; color: var(--verde-oliva);">Opções de Cores</h3>
+  <div style="text-align: center; margin-top: 20px;">
+    <img src="cores.png" alt="Paleta de cores" style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+  </div>
+</div>
+
+      <!-- CONTADOR - SCROLL 7 -->
+      <section id="contador" class="secao">
+        <div class="conteudo-secao">
+          <h2>Contagem Regressiva</h2>
+          <div class="contador-container-elegante">
+            <div class="contador-item-elegante">
+              <div id="dias" class="contador-numero-elegante">00</div>
+              <div class="contador-label-elegante">Dias</div>
+            </div>
+            <div class="contador-item-elegante">
+              <div id="horas" class="contador-numero-elegante">00</div>
+              <div class="contador-label-elegante">Horas</div>
+            </div>
+            <div class="contador-item-elegante">
+              <div id="minutos" class="contador-numero-elegante">00</div>
+              <div class="contador-label-elegante">Minutos</div>
+            </div>
+            <div class="contador-item-elegante">
+              <div id="segundos" class="contador-numero-elegante">00</div>
+              <div class="contador-label-elegante">Segundos</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALERIA - SCROLL 8 -->
+      <section id="galeria" class="secao">
+        <div class="conteudo-secao">
+          <h2>Nossos Momentos</h2>
+          <div class="galeria-container-elegante">
+  <div class="galeria-item-elegante" onclick="abrirModal(0)">
+    <img src="Capa.jpg" alt="Alfredo e Nachan" class="galeria-img-elegante" />
+    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="galeria-item-elegante" onclick="abrirModal(1)">
+    <img src="Foto1.jpg" alt="Alfredo e Nachan" class="galeria-img-elegante" />
+    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="galeria-item-elegante" onclick="abrirModal(2)">
+    <img src="Noivo.jpg" alt="Alfredo" class="galeria-img-elegante" />
+    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+  <div class="galeria-item-elegante" onclick="abrirModal(3)">
+    <img src="Noiva.jpg" alt="Nachan" class="galeria-img-elegante" />
+    <div class="galeria-overlay"><i class="fas fa-search-plus"></i></div>
+  </div>
+</div>
+        </div>
+      </section>
+
+     
+<!-- RSVP - SCROLL 9 -->
+<section id="rsvp" class="secao">
+  <div class="conteudo-secao">
+    <h2>Confirmação de Presença</h2>
+    <div class="rsvp-container-elegante">
+      <p style="font-size: 1.3rem; color: var(--cinza-medio); margin-bottom: 20px;">
+        Por favor, confirme sua presença até 30 de Agosto de 2026
+      </p>
+      
+      <!-- FORMULÁRIO DE CONFIRMAÇÃO -->
+      <div class="form-confirmacao">
+        <div class="form-group">
+          <label for="nomeConfirmacao">Nome completo:</label>
+          <input type="text" id="nomeConfirmacao" placeholder="Digite seu nome completo">
+        </div>
+        
+        <div class="form-group">
+          <label>Confirmo minha presença:</label>
+          <div class="opcoes-presenca">
+            <label>
+              <input type="radio" name="presenca" value="Sim, estarei presente! 🎉" checked> Sim, estarei presente! 🎉
+            </label>
+            <label>
+              <input type="radio" name="presenca" value="Infelizmente não poderei comparecer 😔"> Infelizmente não poderei comparecer 😔
+            </label>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="acompanhantes">Número de acompanhantes (se aplicável):</label>
+          <input type="number" id="acompanhantes" min="0" value="0">
+        </div>
+       <button class="btn-confirmar-elegante" id="btnConfirmarPresenca">
+  <i class="fas fa-check-circle"></i> Confirmar Presença
+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* ESTILOS DO FORMULÁRIO DE CONFIRMAÇÃO */
+.form-confirmacao {
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--verde-oliva);
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid var(--verde-oliva-claro);
+  border-radius: 8px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1rem;
+  background-color: var(--branco);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--dourado);
+  box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.opcoes-presenca {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.opcoes-presenca label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.opcoes-presenca input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--dourado);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+
+/* BOTÃO CONFIRMAR PRESENÇA - ESTILO ELEGANTE */
+.btn-confirmar-elegante {
+  background: linear-gradient(135deg, var(--verde-oliva), var(--verde-oliva-suave));
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.5px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.btn-confirmar-elegante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  background: linear-gradient(135deg, var(--dourado), #b8942e);
+  color: var(--verde-oliva);
+}
+
+.btn-confirmar-elegante i {
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-confirmar-elegante:hover i {
+  transform: scale(1.1);
+}
+.card-convidado {
+  background: #ffffff;
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: 20px;
+  padding: 30px 40px;
+  text-align: center;
+  max-width: 400px;
+  margin: 20px auto 30px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  transform: translateX(-80px);
+  transition: opacity 1.8s ease, transform 1.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-convidado.visivel {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes entradaCard {
+  0% {
+    opacity: 0;
+    transform: translateY(60px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card-icone {
+  font-size: 2.5rem;
+  color: var(--dourado);
+  margin-bottom: 12px;
+  animation: pulsarIcone 2s infinite ease-in-out;
+  display: block;
+}
+
+@keyframes pulsarIcone {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+
+.nome-convidado {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--verde-oliva);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.convite-valido {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  color: var(--cinza-medio);
+  margin-bottom: 8px;
+}
+
+.nao-extensivo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.95rem;
+  color: var(--cinza-medio);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.nome-convidado {
+  font-family: "Parisienne", cursive;
+  font-size: 3rem;
+  color: var(--verde-oliva);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.convite-valido {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+  color: var(--cinza-medio);
+  margin-bottom: 8px;
+}
+
+.nao-extensivo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 0.95rem;
+  color: var(--cinza-medio);
+  font-style: italic;
+  opacity: 0.8;
+}
+</style>
+
+<script>
+// Função para enviar confirmação via WhatsApp
+document.getElementById("btnConfirmarPresenca")?.addEventListener("click", function() {
+  const nome = document.getElementById("nomeConfirmacao").value.trim();
+  const presenca = document.querySelector('input[name="presenca"]:checked')?.value || "";
+  const acompanhantes = document.getElementById("acompanhantes").value;
+  const mensagemExtra = document.getElementById("mensagemExtra").value.trim();
+  
+  if (!nome) {
+    alert("Por favor, digite seu nome completo!");
+    return;
+  }
+  
+  // Número do WhatsApp para onde vai a mensagem
+  const numeroWhatsApp = "258825940600";
+  
+  // Construir mensagem
+  let textoMensagem = `*CONFIRMAÇÃO DE PRESENÇA - CASAMENTO Alfredo & Nachan*%0A%0A`;
+  textoMensagem += `*Nome:* ${nome}%0A`;
+  textoMensagem += `*Presença:* ${presenca}%0A`;
+  textoMensagem += `*Acompanhantes:* ${acompanhantes}%0A`;
+  if (mensagemExtra) {
+    textoMensagem += `*Mensagem:* ${mensagemExtra}%0A`;
+  }
+  textoMensagem += `%0A*Data do evento:* 04 de Setembro de 2026`;
+  
+  // Abrir WhatsApp
+  const url = `https://wa.me/${numeroWhatsApp}?text=${textoMensagem}`;
+  window.open(url, '_blank');
+});
+
+</script>
+
+      <!-- MENSAGENS - SCROLL 10 (COM SISTEMA DE ABAS) -->
+      <section id="mensagens" class="secao">
+        <div class="conteudo-secao">
+          <h2>Mensagens Especiais</h2>
+          <p
+            style="
+              font-size: 1.3rem;
+              color: var(--cinza-medio);
+              margin-bottom: 30px;
+            "
+          >
+            Deixe uma mensagem especial para os noivos que será exibida aqui.
+          </p>
+
+          <div class="abas-mensagens-container">
+            <div class="abas-header">
+              <div class="aba ativa" onclick="mudarAba('minhaMensagem')">
+                Minha Mensagem
+              </div>
+              <div class="aba" onclick="mudarAba('outrasMensagens')">
+                Outras Mensagens
+              </div>
+            </div>
+
+            <div class="aba-conteudo ativa" id="minhaMensagem">
+              <div class="form-mensagem-elegante">
+                <div class="form-grid">
+                  <div class="input-group">
+                    <label for="nomeMensagem">Seu nome:</label>
+                    <input
+                      type="text"
+                      id="nomeMensagem"
+                      placeholder="Digite seu nome"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label for="relacaoMensagem">Sua relação:</label>
+                    <select id="relacaoMensagem">
+                      <option value="">Selecione uma opção</option>
+                      <option value="Família">Família</option>
+                      <option value="Amigo(a)">Amigo(a)</option>
+                      <option value="Colega de trabalho">
+                        Colega de trabalho
+                      </option>
+                      <option value="Padrinho/Madrinha">
+                        Padrinho/Madrinha
+                      </option>
+                      <option value="Convidado(a) especial">
+                        Convidado(a) especial
+                      </option>
+                      <option value="Outro">Outro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <textarea
+                  id="textoMensagem"
+                  placeholder="Escreva sua mensagem aqui..."
+                ></textarea>
+                <button class="btn-enviar-elegante" id="enviarMensagem">
+                  Enviar Mensagem
+                </button>
+              </div>
+
+              <!-- ÚLTIMAS MENSAGENS (SUA + 2 OUTRAS) -->
+              <div
+                id="ultimasMensagensContainer"
+                class="ultimas-mensagens-container"
+              >
+                <!-- As 3 últimas mensagens aparecerão aqui -->
+              </div>
+            </div>
+
+            <div class="aba-conteudo" id="outrasMensagens">
+              <div id="mensagensContainer" class="mensagens-container">
+                <!-- Todas as outras mensagens aparecerão aqui -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+          <!-- PRESENTES - SCROLL 11 -->
+      <section id="presentes" class="secao">
+        <div class="conteudo-secao">
+          <div class="icone-presente-pulsante">
+            <i class="fas fa-gift"></i>
+          </div>
+          <h2>Presentes</h2>
+          
+          <p style="font-size: 1.2rem; color: var(--cinza-medio); max-width: 700px; margin: 0 auto 20px; line-height: 1.8;">
+            A vossa presença no dia do nosso casamento será, sem dúvida, o maior presente que poderíamos receber.
+          </p>
+          <p style="font-size: 1.2rem; color: var(--cinza-medio); max-width: 700px; margin: 0 auto 30px; line-height: 1.8;">
+            No entanto, para aqueles que desejarem presentear-nos, optámos por receber contribuições em valor monetário, será recebida com gratidão e carinho.
+          </p>
+          
+          <div style="text-align: center; margin-bottom: 30px;">
+  <button class="btn-presente-elegante" 
+    onclick="abrirModalPresente('modalPresentesMonetario')" 
+    style="background: linear-gradient(135deg, var(--dourado), #b8942e); color: white; margin: 0 auto; min-width: 250px; border: none;">
+    <i class="fas fa-money-bill-wave"></i>
+    Presentes Monetário
+  </button>
+</div>
+          <!-- MODAL PRESENTES MONETÁRIO -->
+          <div id="modalPresentesMonetario" class="modal-presente-elegante">
+            <span class="fechar-modal-presente-elegante" onclick="fecharModalPresente('modalPresentesMonetario')">&times;</span>
+            <h3 style="font-family: 'Playfair Display', serif; color: var(--verde-oliva); margin-bottom: 20px; text-align: center;">
+              <i class="fas fa-hand-holding-heart" style="color: var(--dourado); margin-right: 10px;"></i>
+              Dados Bancários
+            </h3>
+            
+            <div style="background: linear-gradient(135deg, var(--creme-claro), white); border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--dourado);">
+              
+              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
+                <i class="fas fa-user" style="width: 30px; color: var(--dourado);"></i>
+                <span style="font-weight: 600;">Titular:</span>
+                <span style="margin-left: 10px;">Alfredo António Massambo</span>
+              </div>
+              
+              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
+                <i class="fas fa-university" style="width: 30px; color: var(--dourado);"></i>
+                <span style="font-weight: 600;">Banco:</span>
+                <span style="margin-left: 10px;">BCI</span>
+              </div>
+              
+              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
+                <i class="fas fa-hashtag" style="width: 30px; color: var(--dourado);"></i>
+                <span style="font-weight: 600;">Conta:</span>
+                <span style="margin-left: 10px; font-family: monospace;">9421629510001</span>
+              </div>
+              
+              <div style="display: flex; align-items: center; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
+                <i class="fas fa-barcode" style="width: 30px; color: var(--dourado);"></i>
+                <span style="font-weight: 600;">NIB:</span>
+                <span style="margin-left: 10px; font-family: monospace; font-size: 0.9rem;">0008.0000.9421629510180</span>
+              </div>
+              
+              <div style="margin-top: 25px; padding-top: 20px; border-top: 2px dashed var(--dourado); text-align: center;">
+                <p style="font-size: 1.1rem; margin-bottom: 8px;"><i class="fas fa-phone" style="color: var(--dourado); margin-right: 10px;"></i><strong>M-Pesa</strong></p>
+                <p style="font-size: 1.3rem; color: var(--verde-oliva); font-weight: 600;">NACHAN ARROZ</p>
+                <p style="font-size: 1.1rem; color: var(--cinza-medio);">84 8085979</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- RODAPÉ - SCROLL FINAL -->
+<section id="rodape" class="secao">
+  <div class="conteudo-secao">
+    <p class="assinatura-elegante">Com amor,</p>
+    <h1 style="color: white; font-family: 'Parisienne', cursive; font-size: 3rem; margin-bottom: 10px;">
+      Alfredo & Nachan
+    </h1>
+
+    <div class="iniciais-elegante">L ♡ I</div>
+
+    <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin: 20px 0;">
+      Um convite digital para o casamento de Alfredo e Nachan <br />por
+      Convites Dourados MZ
+    </p>
+
+    <!-- MÚSICA DO RODAPÉ -->
+    <p style="color: var(--dourado-claro); font-size: 1rem; margin: 15px 0; font-style: italic;">
+      🎶 Música: Ordinary - Alex Warren
+    </p>
+
+    <img src="logoCD.jpg" alt="Convites Dourados MZ" class="logo-rodape-elegante" style="max-width: 100px;" />
+
+    <a href="https://www.instagram.com/convitedouradomz" class="instagram-texto" target="_blank">
+      <i class="fab fa-instagram"></i>
+      @convitedouradomz
+    </a>
+
+    <p class="texto-rodape-elegante">© Todos os direitos reservados.</p>
+  </div>
+</section>
+
+    <!-- MODAL GALERIA -->
+    <div id="modalGaleria" class="modal-elegante">
+      <span class="fechar-modal-elegante" onclick="fecharModal()">&times;</span>
+      <img class="modal-img-elegante" id="imagemModal" src="" alt="" />
+    </div>
+       
+
+    <!-- POPUP MENSAGEM ENVIADA -->
+    <div id="popupMensagem" class="popup-mensagem-elegante">
+      <h3>Mensagem Enviada!</h3>
+      <p
+        style="
+          font-size: 1.2rem;
+          color: var(--cinza-medio);
+          margin-bottom: 25px;
+        "
+      >
+        Sua mensagem foi enviada com sucesso e aparecerá abaixo!
+      </p>
+      <button
+        class="btn-enviar-elegante"
+        onclick="fecharPopupMensagem()"
+        style="margin-top: 10px"
+      >
+        Fechar
+      </button>
+    </div>
+
+    <!-- OVERLAY PARA MODAIS -->
+    <div
+      id="overlay"
+      class="overlay-elegante"
+      onclick="fecharTodosModais()"
+    ></div>
+
+    <script>
+      // Elementos principais
+      const btnAbrirConvite = document.getElementById("btnAbrirConvite");
+      const conteudoPrincipal = document.getElementById("conteudoPrincipal");
+      const btnTocarMusica = document.getElementById("btnTocarMusica");
+      const musicaFundo = document.getElementById("musicaFundo");
+      const secaoCapa = document.getElementById("capa");
+      const secoes = document.querySelectorAll(".secao");
+      const textoDestaque = document.querySelector(".texto-destaque");
+      const noivo = document.querySelector(".noivo");
+      const noiva = document.querySelector(".noiva");
+      const coracaoCentral = document.querySelector(".coracao-central");
+      const eventosElegantes = document.querySelectorAll(".evento-elegante");
+      const contadorItems = document.querySelectorAll(
+        ".contador-item-elegante",
+      );
+      const galeriaItems = document.querySelectorAll(".galeria-item-elegante");
+      const ultimasMensagensContainer = document.getElementById(
+        "ultimasMensagensContainer",
+      );
+      const mensagensContainer = document.getElementById("mensagensContainer");
+      const enviarMensagemBtn = document.getElementById("enviarMensagem");
+           // ========== CONTROLE DO BOTÃO DE MÚSICA FLUTUANTE ==========
+let musicaTocando = false;
+
+function tocarMusica() {
+  musicaFundo.volume = 0.25;
+  const playPromise = musicaFundo.play();
+  
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        musicaTocando = true;
+        document.getElementById("iconeMusica").className = "fas fa-pause";
+      })
+      .catch(() => {
+        musicaTocando = false;
+        document.getElementById("iconeMusica").className = "fas fa-play";
+      });
+  }
+}
+
+function pausarMusica() {
+  musicaFundo.pause();
+  musicaTocando = false;
+  document.getElementById("iconeMusica").className = "fas fa-play";
+}
+
+function alternarMusica() {
+  if (musicaTocando) {
+    pausarMusica();
+  } else {
+    tocarMusica();
+  }
+}
+
+// Evento do botão flutuante
+// Evento do botão flutuante
+const botaoMusica = document.getElementById("botaoMusica");
+if (botaoMusica) {
+  botaoMusica.addEventListener("click", function() {
+    console.log("Botão clicado!"); // Para testar se está funcionando
+    if (musicaTocando) {
+      pausarMusica();
+    } else {
+      tocarMusica();
+    }
+  });
+}
+
+// Quando a música terminar
+musicaFundo.addEventListener("ended", function() {
+  musicaTocando = false;
+  document.getElementById("iconeMusica").className = "fas fa-play";
+});
+
+      // Mensagens de exemplo (2 para começar)
+      const mensagensExemplo = [];
+
+      // Sistema de abas para mensagens
+      function mudarAba(idAba) {
+        // Remover classe ativa de todas as abas
+        document.querySelectorAll(".aba").forEach((aba) => {
+          aba.classList.remove("ativa");
+        });
+
+        document.querySelectorAll(".aba-conteudo").forEach((conteudo) => {
+          conteudo.classList.remove("ativa");
+        });
+
+        // Adicionar classe ativa à aba clicada
+        document
+          .querySelector(`.aba[onclick*="${idAba}"]`)
+          .classList.add("ativa");
+        document.getElementById(idAba).classList.add("ativa");
+
+        // Se mudar para "outras mensagens", carregar todas as mensagens
+        if (idAba === "outrasMensagens") {
+          carregarTodasMensagens();
+        }
+      }
+
+      // Carregar últimas 3 mensagens (sua + 2 outras)
+      function carregarUltimasMensagens() {
+        const mensagensSalvas =
+          JSON.parse(localStorage.getItem("mensagensCasamento")) ||
+          mensagensExemplo;
+
+        ultimasMensagensContainer.innerHTML = "";
+
+        if (mensagensSalvas.length === 0) {
+          ultimasMensagensContainer.innerHTML =
+            '<div class="sem-mensagens">✨ Seja o primeiro a deixar uma mensagem especial para os noivos! ✨<br><i class="fas fa-heart" style="color: var(--dourado); margin-top: 10px;"></i></div>';
+          return;
+        }
+
+        // Pegar apenas as 3 últimas mensagens
+        const ultimas3Mensagens = mensagensSalvas.slice(0, 3);
+
+        ultimas3Mensagens.forEach((mensagem, index) => {
+          const mensagemCard = document.createElement("div");
+          mensagemCard.className = "mensagem-card";
+          mensagemCard.style.animationDelay = `${index * 0.2}s`;
+
+          mensagemCard.innerHTML = `
+                <div class="mensagem-header">
+                    <div class="mensagem-autor">${mensagem.nome}</div>
+                    <div class="mensagem-relacao">${mensagem.relacao}</div>
+                </div>
+                <div class="mensagem-texto">"${mensagem.texto}"</div>
+                <div class="mensagem-data">${mensagem.data}</div>
+            `;
+
+          ultimasMensagensContainer.appendChild(mensagemCard);
+        });
+      }
+
+      // Carregar todas as mensagens para a aba "Outras Mensagens"
+      function carregarTodasMensagens() {
+        const mensagensSalvas =
+          JSON.parse(localStorage.getItem("mensagensCasamento")) ||
+          mensagensExemplo;
+
+        mensagensContainer.innerHTML = "";
+
+        if (mensagensSalvas.length === 0) {
+          mensagensContainer.innerHTML =
+            '<div class="sem-mensagens">💌 Nenhuma mensagem ainda. Clique na aba "Minha Mensagem" e seja o primeiro a escrever! 💌</div>';
+          return;
+        }
+
+        // Pegar todas as mensagens exceto as 3 primeiras
+        const outrasMensagens = mensagensSalvas.slice(3);
+
+        if (outrasMensagens.length === 0) {
+          mensagensContainer.innerHTML =
+            '<div class="sem-mensagens">Todas as mensagens estão sendo exibidas na aba principal.</div>';
+          return;
+        }
+
+        outrasMensagens.forEach((mensagem, index) => {
+          const mensagemCard = document.createElement("div");
+          mensagemCard.className = "mensagem-card";
+          mensagemCard.style.animationDelay = `${index * 0.2}s`;
+
+          mensagemCard.innerHTML = `
+                <div class="mensagem-header">
+                    <div class="mensagem-autor">${mensagem.nome}</div>
+                    <div class="mensagem-relacao">${mensagem.relacao}</div>
+                </div>
+                <div class="mensagem-texto">"${mensagem.texto}"</div>
+                <div class="mensagem-data">${mensagem.data}</div>
+            `;
+
+          mensagensContainer.appendChild(mensagemCard);
+        });
+      }
+
+      enviarMensagemBtn.addEventListener("click", () => enviarMensagemFirebase());
+
+      // Botão para abrir o convite - CORRIGIDO
+      btnAbrirConvite.addEventListener("click", function () {
+        // Fazer fade out da capa
+        secaoCapa.style.opacity = "0";
+        secaoCapa.style.transition = "opacity 0.8s ease";
+
+        // Mostrar conteúdo principal imediatamente
+        conteudoPrincipal.classList.remove("oculto");
+        conteudoPrincipal.style.opacity = "0";
+        conteudoPrincipal.style.transition = "opacity 0.8s ease";
+
+        setTimeout(() => {
+          conteudoPrincipal.style.opacity = "1";
+        }, 100);
+
+        // Esconder a capa completamente após o fade
+        setTimeout(() => {
+          secaoCapa.classList.add("oculto");
+        }, 800);
+
+        // Tocar música
+        setTimeout(() => {
+          tocarMusica();
+        }, 500);
+
+        // Scroll suave para o topo
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }, 300);
+      });
+
+      // Animação de aparecimento das seções
+      function verificarSecoesVisiveis() {
+        const alturaJanela = window.innerHeight;
+        const triggerPoint = alturaJanela * 0.75;
+
+        secoes.forEach((secao) => {
+          const topoSecao = secao.getBoundingClientRect().top;
+
+          if (topoSecao < triggerPoint) {
+            secao.classList.add("visivel");
+
+            if (secao.id === "texto-romantico" && textoDestaque) {
+              setTimeout(() => {
+                textoDestaque.classList.add("visivel");
+              }, 100);
+            }
+          }
+        });
+      }
+
+      // ANIMAÇÃO ESPECÍFICA PARA OS NOIVOS - CORRIGIDA
+      function animarNoivosAoScroll() {
+        const secaoNoivos = document.getElementById("os-noivos");
+        if (!secaoNoivos) return;
+
+        const alturaJanela = window.innerHeight;
+        const topoSecao = secaoNoivos.getBoundingClientRect().top;
+        const alturaSecao = secaoNoivos.offsetHeight;
+
+        // Verificar se a seção está visível
+        if (topoSecao < alturaJanela * 0.8) {
+          // Primeiro: aparecer o noivo
+          if (noivo && !noivo.classList.contains("visivel")) {
+    setTimeout(() => {
+      noivo.classList.add("visivel");
+    }, 3000);
+
+    setTimeout(() => {
+      if (coracaoCentral) {
+        coracaoCentral.classList.add("visivel");
+      }
+    }, 4000);
+
+    setTimeout(() => {
+      if (noiva && !noiva.classList.contains("visivel")) {
+        noiva.classList.add("visivel");
+      }
+    }, 5500);
+  }
+          }
+        }
+      
+
+      // ANIMAÇÃO ESPECÍFICA PARA AGENDA
+      function animarAgendaAoScroll() {
+        const eventos = document.querySelectorAll(".evento-elegante");
+        const alturaJanela = window.innerHeight;
+        const triggerPoint = alturaJanela * 0.8;
+
+        eventos.forEach((evento, index) => {
+          const topoEvento = evento.getBoundingClientRect().top;
+
+          if (topoEvento < triggerPoint) {
+            setTimeout(() => {
+              evento.classList.add("visivel");
+            }, index * 300);
+          }
+        });
+      }
+
+      // Contador regressivo
+      // Contador regressivo com mensagens especiais
+      function atualizarContador() {
+const dataCasamento = new Date("2026-09-04T14:30:00").getTime();
+        const agora = new Date().getTime();
+        const diferenca = dataCasamento - agora;
+
+        const hoje = new Date();
+        const dataHoje = hoje.toDateString();
+        const dataCasamentoObj = new Date("2026-09-04T14:31:000");
+const dataCasamentoString = dataCasamentoObj.toDateString();
+const diaSeguinte = new Date("2026-09-05T00:00:00").toDateString();
+        // Verificar se é dia do casamento
+        if (dataHoje === dataCasamentoString) {
+          const tituloContador = document.querySelector("#contador h2");
+          if (tituloContador) {
+            tituloContador.innerHTML = "🎉 Hoje é o nosso grande dia! 🎉";
+            tituloContador.style.fontSize = "2rem";
+            tituloContador.style.color = "#d4af37";
+          }
+
+          const contadorContainer = document.querySelector(
+            ".contador-container-elegante",
+          );
+          if (contadorContainer) {
+            contadorContainer.innerHTML = `
+        <div style="text-align: center; padding: 40px;">
+          <i class="fas fa-heart" style="font-size: 4rem; color: #d4af37; margin-bottom: 20px;"></i>
+          <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #8a9a5b;">Casamos Hoje!</h3>
+          <p style="font-size: 1.5rem; margin-top: 20px;">O dia mais feliz das nossas vidas chegou! ❤️</p>
+          <p style="font-size: 1.2rem; margin-top: 15px;">Contamos com a sua presença para celebrar connosco!</p>
+        </div>
+      `;
+          }
+          return;
+        }
+
+        // Verificar se é dia seguinte ao casamento (09/08/2026)
+        if (dataHoje === diaSeguinte) {
+          const tituloContador = document.querySelector("#contador h2");
+          if (tituloContador) {
+            tituloContador.innerHTML = "💍 Finalmente Casados! 💍";
+            tituloContador.style.fontSize = "2rem";
+            tituloContador.style.color = "#d4af37";
+          }
+
+          const contadorContainer = document.querySelector(
+            ".contador-container-elegante",
+          );
+          if (contadorContainer) {
+            contadorContainer.innerHTML = `
+        <div style="text-align: center; padding: 40px;">
+          <i class="fas fa-check-circle" style="font-size: 4rem; color: #8a9a5b; margin-bottom: 20px;"></i>
+          <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d4af37;">Sim, aceitamos! 💑</h3>
+          <p style="font-size: 1.5rem; margin-top: 20px;">Obrigado a todos que celebraram este dia especial connosco!</p>
+          <p style="font-size: 1.2rem; margin-top: 15px;">Um novo capítulo começa... ❤️</p>
+        </div>
+      `;
+          }
+          return;
+        }
+
+        // Se não for o dia do casamento nem o seguinte, mostrar contador normal
+        if (diferenca < 0) {
+          const diasElem = document.getElementById("dias");
+          const horasElem = document.getElementById("horas");
+          const minutosElem = document.getElementById("minutos");
+          const segundosElem = document.getElementById("segundos");
+          if (diasElem) diasElem.textContent = "00";
+          if (horasElem) horasElem.textContent = "00";
+          if (minutosElem) minutosElem.textContent = "00";
+          if (segundosElem) segundosElem.textContent = "00";
+          return;
+        }
+
+        const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+        const horas = Math.floor(
+          (diferenca % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+        );
+        const minutos = Math.floor(
+          (diferenca % (1000 * 60 * 60)) / (1000 * 60),
+        );
+        const segundos = Math.floor((diferenca % (1000 * 60)) / 1000);
+
+        const atualizarComAnimacao = (elemento, novoValor) => {
+          if (!elemento) return;
+          const valorAtual = parseInt(elemento.textContent);
+          if (valorAtual !== novoValor) {
+            elemento.style.transform = "scale(1.2)";
+            elemento.style.color = "var(--dourado)";
+            setTimeout(() => {
+              elemento.textContent = novoValor.toString().padStart(2, "0");
+              elemento.style.transform = "scale(1)";
+              setTimeout(() => {
+                elemento.style.color = "";
+              }, 300);
+            }, 200);
+          } else {
+            elemento.textContent = novoValor.toString().padStart(2, "0");
+          }
+        };
+
+        const diasElem = document.getElementById("dias");
+        const horasElem = document.getElementById("horas");
+        const minutosElem = document.getElementById("minutos");
+        const segundosElem = document.getElementById("segundos");
+
+        if (diasElem) atualizarComAnimacao(diasElem, dias);
+        if (horasElem) atualizarComAnimacao(horasElem, horas);
+        if (minutosElem) atualizarComAnimacao(minutosElem, minutos);
+        if (segundosElem) atualizarComAnimacao(segundosElem, segundos);
+      }
+
+      // Galeria de fotos
+const imagensGaleria = [
+  "Capa.jpg",
+  "Foto1.jpg",
+  "Noivo.jpg",
+  "Noiva.jpg"
+];
+
+function abrirModal(indice) {
+  const modal = document.getElementById("modalGaleria");
+  const imagemModal = document.getElementById("imagemModal");
+  
+  imagemModal.src = imagensGaleria[indice];
+  modal.style.display = "flex";
+  modal.style.alignItems = "center";
+  modal.style.justifyContent = "center";
+  
+  setTimeout(() => {
+    modal.classList.add("ativo");
+  }, 10);
+}
+
+function fecharModal() {
+  const modal = document.getElementById("modalGaleria");
+  modal.classList.remove("ativo");
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 500);
+}
+
+// Fechar modal ao clicar no overlay (fora da imagem)
+document.getElementById("modalGaleria")?.addEventListener("click", function(e) {
+  if (e.target === this) {
+    fecharModal();
+  }
+});
+
+      
+
+      function abrirModalPresente(idModal) {
+        const modal = document.getElementById(idModal);
+        const overlay = document.getElementById("overlay");
+
+        overlay.classList.add("ativo");
+        setTimeout(() => {
+          modal.classList.add("ativo");
+        }, 50);
+      }
+
+      function fecharModalPresente(idModal) {
+        const modal = document.getElementById(idModal);
+        const overlay = document.getElementById("overlay");
+
+        modal.classList.remove("ativo");
+        setTimeout(() => {
+          overlay.classList.remove("ativo");
+        }, 300);
+      }
+
+      function fecharTodosModais() {
+        document
+          .querySelectorAll(
+            ".modal-elegante.ativo, .modal-presente-elegante.ativo, .popup-mensagem-elegante.ativo",
+          )
+          .forEach((modal) => {
+            modal.classList.remove("ativo");
+          });
+
+        document.getElementById("overlay").classList.remove("ativo");
+      }
+
+      function fecharPopupMensagem() {
+        const popup = document.getElementById("popupMensagem");
+        const overlay = document.getElementById("overlay");
+
+        popup.classList.remove("ativo");
+        setTimeout(() => {
+          overlay.classList.remove("ativo");
+        }, 300);
+      }
+// Função para fechar a lista de presentes
+function fecharListaPresentes() {
+  const container = document.getElementById("listaPresentesContainer");
+  if (container) {
+    container.style.display = "none";
+  }
+  const overlay = document.getElementById("overlay");
+}
+      // Efeito parallax suave
+      function parallaxEfeito() {
+        const scrolled = window.pageYOffset;
+        const capa = document.getElementById("capa");
+
+        if (capa && !capa.classList.contains("oculto")) {
+          capa.style.backgroundPositionY = scrolled * 0.5 + "px";
+        }
+      }
+
+      // Efeito de digitação no texto romântico
+      function efeitoDigitacao() {
+        const texto = document.querySelector(".texto-destaque");
+        if (!texto) return;
+
+        const textoOriginal = texto.textContent;
+        texto.textContent = "";
+
+        let i = 0;
+        const velocidade = 80;
+
+        function digitar() {
+          if (i < textoOriginal.length) {
+            texto.textContent += textoOriginal.charAt(i);
+            i++;
+            setTimeout(digitar, velocidade);
+          }
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(digitar, 0);
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        observer.observe(texto);
+      }
+
+      // ANIMAÇÃO PARA CONTADOR
+      function animarContadorAoScroll() {
+        const contadorSecao = document.getElementById("contador");
+        const contadorItems = document.querySelectorAll(
+          ".contador-item-elegante",
+        );
+        const alturaJanela = window.innerHeight;
+        const triggerPoint = alturaJanela * 0.8;
+
+        if (contadorSecao) {
+          const topoSecao = contadorSecao.getBoundingClientRect().top;
+
+          if (topoSecao < triggerPoint) {
+            contadorItems.forEach((item, index) => {
+              setTimeout(() => {
+                item.classList.add("visivel");
+              }, index * 200);
+            });
+          }
+        }
+      }
+
+      // ANIMAÇÃO PARA GALERIA
+      function animarGaleriaAoScroll() {
+        const galeriaSecao = document.getElementById("galeria");
+        const galeriaItems = document.querySelectorAll(
+          ".galeria-item-elegante",
+        );
+        const alturaJanela = window.innerHeight;
+        const triggerPoint = alturaJanela * 0.8;
+
+        if (galeriaSecao) {
+          const topoSecao = galeriaSecao.getBoundingClientRect().top;
+
+          if (topoSecao < triggerPoint) {
+            galeriaItems.forEach((item, index) => {
+              setTimeout(() => {
+                item.classList.add("visivel");
+              }, index * 150);
+            });
+          }
+        }
+      }
+
+      // Inicialização
+      window.addEventListener("scroll", function () {
+        verificarSecoesVisiveis();
+        parallaxEfeito();
+        animarAgendaAoScroll();
+        animarContadorAoScroll();
+        animarGaleriaAoScroll();
+        animarNoivosAoScroll(); // Adicionada para animar os noivos
+        animarCardConvidado(); // ADICIONA ESTA LINHA
+      });
+
+      window.addEventListener("load", function () {
+        verificarSecoesVisiveis();
+        atualizarContador();
+        setInterval(atualizarContador, 1000);
+
+        // Carregar mensagens iniciais
+        if (!localStorage.getItem("mensagensCasamento")) {
+          localStorage.setItem(
+            "mensagensCasamento",
+            JSON.stringify(mensagensExemplo),
+          );
+        }
+
+        // Carregar últimas 3 mensagens
+        carregarUltimasMensagens();
+
+        // Pré-carregar imagens
+        const imagensPrecarregar = [
+          "LauraeJoseeCapa.jpg",
+          "LauraeJosee3.jpg",
+          "Joseelaura1.jpg",
+          "Foto5.jpg",
+          "CapJELjpg.jpg",
+          "Jose.jpg",
+          "Lauraa.jpg",
+          "logoCD.jpg",
+        ];
+
+        imagensPrecarregar.forEach((src) => {
+          const img = new Image();
+          img.src = src;
+        });
+
+        secaoCapa.classList.add("visivel");
+        setTimeout(efeitoDigitacao, 1000);
+      });
+
+     
+ // FORÇAR BOTÃO DE MÚSICA FUNCIONAR
+document.addEventListener("DOMContentLoaded", function() {
+  const botao = document.getElementById("botaoMusica");
+  if (botao) {
+    botao.onclick = function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const audio = document.getElementById("musicaFundo");
+      const icone = document.getElementById("iconeMusica");
+      
+      if (audio.paused) {
+        audio.play();
+        icone.className = "fas fa-pause";
+      } else {
+        audio.pause();
+        icone.className = "fas fa-play";
+      }
+    };
+  }
+});
+// ANIMAÇÃO ESCRIVANINHA - UMA POR UMA (VERSÃO QUE FUNCIONAVA)
+function animarGaleriaEscrivaninha() {
+  const fotos = document.querySelectorAll('.galeria-item-elegante');
+  
+  fotos.forEach((foto, index) => {
+    foto.style.opacity = '0';
+    foto.style.transform = 'translateY(-80px) rotate(-8deg)';
+    setTimeout(() => {
+      foto.style.transition = 'all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55)';
+      foto.style.opacity = '1';
+      foto.style.transform = 'translateY(0) rotate(0deg)';
+    }, 200 + (index * 200));
+  });
+}
+
+// Quando a secção da galeria ficar visível, ativar animação
+const observerEscrivaninha = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animarGaleriaEscrivaninha();
+      observerEscrivaninha.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.3 });
+
+const galeriaSectionEscrivaninha = document.getElementById('galeria');
+if (galeriaSectionEscrivaninha) {
+  observerEscrivaninha.observe(galeriaSectionEscrivaninha);
+}
+// ===== FUNÇÕES PARA MODAIS DE PRESENTES =====
+function abrirModalPresente(idModal) {
+  const modal = document.getElementById(idModal);
+  const overlay = document.getElementById("overlay");
+  
+  if (modal) {
+    modal.style.display = "block";
+    setTimeout(() => modal.classList.add("ativo"), 50);
+  }
+}
+
+function fecharModalPresente(idModal) {
+  const modal = document.getElementById(idModal);
+  const overlay = document.getElementById("overlay");
+  
+  if (modal) {
+    modal.classList.remove("ativo");
+    setTimeout(() => {
+      modal.style.display = "none";
+      if (overlay) overlay.classList.remove("ativo");
+    }, 300);
+  }
+}
+
+function fecharTodosModais() {
+  document
+    .querySelectorAll(".modal-elegante.ativo, .modal-presente-elegante.ativo, .popup-mensagem-elegante.ativo")
+    .forEach((modal) => {
+      modal.classList.remove("ativo");
+      setTimeout(() => {
+        modal.style.display = "none";
+      }, 300);
+    });
+  
+  const overlay = document.getElementById("overlay");
+  if (overlay) overlay.classList.remove("ativo");
+}
+function abrirModalDressCode() {
+  const modal = document.getElementById("modalDressCode");
+  if (modal) {
+    modal.style.display = "block";
+    setTimeout(() => modal.classList.add("ativo"), 50);
+  }
+}
+
+function fecharModalDressCode() {
+  const modal = document.getElementById("modalDressCode");
+  const overlay = document.getElementById("overlay");
+  if (modal) {
+    modal.classList.remove("ativo");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 300);
+  }
+  if (overlay) overlay.classList.remove("ativo");
+}
+function lerNomeDaURL() {
+  const params = new URLSearchParams(window.location.search);
+  const nome = params.get("nome");
+  const elementoNome = document.getElementById("nomeConvidado");
+  const elementoNum = document.getElementById("numPessoas");
+
+  if (nome) {
+    elementoNome.textContent = nome;
+    // Contar pessoas pelo "e" ou "&" no nome
+    const temDois = nome.toLowerCase().includes(" e ") || nome.includes("&");
+    if (elementoNum) elementoNum.textContent = temDois ? "2" : "1";
+  }
+}
+
+lerNomeDaURL();
+function animarCardConvidado() {
+  const card = document.querySelector(".card-convidado");
+  const titulo = document.querySelector("#saudacao h2");
+  if (!card || !titulo) return;
+
+  const topo = titulo.getBoundingClientRect().top;
+  const alturaJanela = window.innerHeight;
+
+  if (topo < alturaJanela * 0.75 && !card.classList.contains("visivel")) {
+    setTimeout(() => {
+      card.classList.add("visivel");
+    }, 2000);
+  }
+}
+// CORAÇÕES FLUTUANTES - EFEITO PREMIUM
+function criarCoracaoFlutuante() {
+  const heartContainer = document.createElement('div');
+  heartContainer.className = 'heart-container';
+  document.body.appendChild(heartContainer);
+  
+  const intensidade = 5; // Apenas 3 corações por vez
+  
+  function adicionarCoracao() {
+    const heart = document.createElement('div');
+    heart.className = 'floating-heart';
+    
+    // Criar ícone de coração
+    const icon = document.createElement('i');
+    icon.className = 'fas fa-heart';
+    
+    // Tamanhos pequenos e variados (8px a 16px)
+    const tamanhos = [8, 10, 12, 14, 16];
+    const tamanho = tamanhos[Math.floor(Math.random() * tamanhos.length)];
+    icon.style.fontSize = tamanho + 'px';
+    
+    // Posição horizontal aleatória (0% a 100%)
+    const leftPos = Math.random() * 100;
+    heart.style.left = leftPos + '%';
+    heart.style.bottom = '-30px';
+    
+    // Movimento horizontal aleatório (-80px a 80px)
+    const moveX = (Math.random() - 0.5) * 160;
+    heart.style.setProperty('--move-x', moveX + 'px');
+    
+    // Duração da animação (10s a 16s - lento)
+    const duracao = 6 + Math.random() * 5;
+    heart.style.animationDuration = duracao + 's';
+    
+    // Delay inicial aleatório (0s a 8s)
+    const delay = Math.random() * 8;
+    heart.style.animationDelay = delay + 's';
+    
+    heart.appendChild(icon);
+    heartContainer.appendChild(heart);
+    
+    // Remover o elemento após a animação terminar
+    setTimeout(() => {
+      if (heart && heart.parentNode) {
+        heart.remove();
+      }
+    }, (duracao + delay) * 1000);
+  }
+  
+  // Iniciar com 3 corações
+  for (let i = 0; i < intensidade; i++) {
+    setTimeout(() => {
+      adicionarCoracao();
+    }, i * 1500);
+  }
+  
+  // Continuar adicionando corações
+  setInterval(() => {
+    const coracoesAtivos = document.querySelectorAll('.floating-heart').length;
+    if (coracoesAtivos < intensidade) {
+      adicionarCoracao();
+    }
+  }, 1500);
+}
+
+// Iniciar o efeito após a página carregar
+window.addEventListener('load', function() {
+  setTimeout(() => {
+    criarCoracaoFlutuante();
+  }, 500);
+});
+    </script>
+    
+  
+
+<!-- FIREBASE -->
+ <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, query, orderBy, onSnapshot, getDocs, where } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAsXcP98tL4l8REoZdGJtgC2w0oAMDxRcs",
+    authDomain: "casamentodoedmilsonefarida.firebaseapp.com",
+    projectId: "casamentodoedmilsonefarida",
+    storageBucket: "casamentodoedmilsonefarida.firebasestorage.app",
+    messagingSenderId: "113127738183",
+    appId: "1:113127738183:web:acf1f999d2f36e031a9a62"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  
+  // ===== COLEÇÕES SEPARADAS PARA alfredo E Nachan =====
+  const mensagensRef = collection(db, "mensagens-alfredo-Nachan");
+  const presentesRef = collection(db, "presentes-alfredo-Nachan");
+
+  // ========== 1. MENSAGENS ==========
+  function criarCard(msg, index) {
+    return `
+      <div class="mensagem-card" style="animation-delay:${index * 0.15}s">
+        <div class="mensagem-header">
+          <div class="mensagem-autor">${msg.nome}</div>
+          <div class="mensagem-relacao">${msg.relacao}</div>
+        </div>
+        <div class="mensagem-texto">"${msg.texto}"</div>
+        <div class="mensagem-data">${msg.data}</div>
+      </div>`;
+  }
+
+  function renderMensagens(mensagens) {
+    const ultimasContainer = document.getElementById("ultimasMensagensContainer");
+    const todasContainer = document.getElementById("mensagensContainer");
+    if (!ultimasContainer || !todasContainer) return;
+
+    if (mensagens.length === 0) {
+      ultimasContainer.innerHTML = '<div class="sem-mensagens">✨ Seja o primeiro a deixar uma mensagem especial para Alfredo e Nachan! ✨</div>';
+      todasContainer.innerHTML = '<div class="sem-mensagens">💌 Nenhuma mensagem ainda.</div>';
+      return;
+    }
+
+    ultimasContainer.innerHTML = mensagens.slice(0, 3).map(criarCard).join("");
+    todasContainer.innerHTML = mensagens.slice(3).length > 0
+      ? mensagens.slice(3).map(criarCard).join("")
+      : '<div class="sem-mensagens">Todas as mensagens estão na aba principal.</div>';
+  }
+
+  function carregarMensagens() {
+    const q = query(mensagensRef, orderBy("timestamp", "desc"));
+    onSnapshot(q, (snapshot) => {
+      const mensagens = [];
+      snapshot.forEach(doc => mensagens.push(doc.data()));
+      renderMensagens(mensagens);
+    });
+  }
+
+  window.enviarMensagemFirebase = async function() {
+    const nome = document.getElementById("nomeMensagem").value.trim();
+    const relacao = document.getElementById("relacaoMensagem").value;
+    const texto = document.getElementById("textoMensagem").value.trim();
+
+    if (!nome || !relacao || !texto) {
+      alert("Preencha todos os campos!");
+      return;
+    }
+
+    try {
+      await addDoc(mensagensRef, {
+        nome, relacao, texto,
+        data: new Date().toLocaleDateString("pt-PT"),
+        timestamp: Date.now()
+      });
+
+      document.getElementById("nomeMensagem").value = "";
+      document.getElementById("relacaoMensagem").value = "";
+      document.getElementById("textoMensagem").value = "";
+
+      const popup = document.getElementById("popupMensagem");
+      const overlay = document.getElementById("overlay");
+      if (overlay) overlay.classList.add("ativo");
+      if (popup) setTimeout(() => popup.classList.add("ativo"), 50);
+    } catch (err) {
+      alert("Erro ao enviar mensagem.");
+      console.error(err);
+    }
+  };
+</script>
+<!-- BOTÃO FLUTUANTE DE MÚSICA - VERSÃO FINAL -->
+<div id="botaoMusica" class="botao-musica-flutuante" style="position:fixed!important;bottom:20px!important;right:20px!important;width:55px!important;height:55px!important;background:black!important;border-radius:50%!important;display:flex!important;justify-content:center!important;align-items:center!important;z-index:999999999!important;border:2px solid #d4af37!important;cursor:pointer!important;box-shadow:0 5px 20px rgba(0,0,0,0.3)!important">
+  <i id="iconeMusica" class="fas fa-play" style="color:white!important;font-size:1.8rem!important"></i>
+</div>
+
+<script>
+  // SCRIPT ESPECÍFICO PARA O BOTÃO DE MÚSICA
+  (function() {
+    var botao = document.getElementById("botaoMusica");
+    var audio = document.getElementById("musicaFundo");
+    var icone = document.getElementById("iconeMusica");
+    
+    if (botao && audio) {
+      botao.onclick = function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        if (audio.paused) {
+          audio.play();
+          icone.className = "fas fa-pause";
+          icone.style.color = "white";
+        } else {
+          audio.pause();
+          icone.className = "fas fa-play";
+          icone.style.color = "white";
+        }
+        return false;
+      };
+      
+      console.log("Botão de música ativado!");
+    } else {
+      console.log("Botão ou áudio não encontrado!");
+    }
+  })();
+  // Função para enviar confirmação via WhatsApp
+document.getElementById("btnConfirmarPresenca")?.addEventListener("click", function() {
+  const nome = document.getElementById("nomeConfirmacao").value.trim();
+  const presenca = document.querySelector('input[name="presenca"]:checked')?.value || "";
+  const acompanhantes = document.getElementById("acompanhantes").value;
+  
+  if (!nome) {
+    alert("Por favor, digite seu nome completo!");
+    return;
+  }
+  
+  const numeroWhatsApp = "258827918779";
+  
+  let textoMensagem = `*CONFIRMAÇÃO DE PRESENÇA - CASAMENTO Alfredo & Nachan*%0A%0A`;
+  textoMensagem += `*Nome:* ${nome}%0A`;
+  textoMensagem += `*Presença:* ${presenca}%0A`;
+  textoMensagem += `*Acompanhantes:* ${acompanhantes}%0A`;
+  textoMensagem += `%0A*Data do evento:* 04 de Setembro de 2026`;
+  
+  // Abrir WhatsApp em nova aba (não sai do convite)
+  window.open(`https://wa.me/${numeroWhatsApp}?text=${textoMensagem}`, '_blank');
+});
+</script>
+  </body>
+</html>
