@@ -53,8 +53,9 @@
       }
 
       .secao {
-        min-height: 100vh;
-        padding: 60px 15px;
+        .secao {
+  min-height: auto;  /* ← MUDA DE 100vh PARA auto */
+  padding: 40px 15px; /* ← REDUZ DE 60px PARA 40px */
         display: flex;
         flex-direction: column;
         justify-content: center;
