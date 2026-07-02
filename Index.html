@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Convite de Casamento | Alfredo & Nachan</title>
+    <title>Convite de Casamento | Nachan & Alfredo </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -2481,6 +2481,29 @@ body {
   visibility: visible;
   opacity: 1;
 }
+/* ESTILO DA MESA */
+.mesa-convidado {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.3rem;
+  color: var(#000000);
+  margin: 10px auto 8px;
+  padding: 6px 24px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 30px;
+  display: inline-block;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  text-align: center;
+}
+
+.mesa-convidado strong {
+  font-weight: 700;
+  color: var(--verde-oliva);
+}
+
+.mesa-convidado i {
+  margin-right: 8px;
+  color: var(#000000);
+}
 </style>
   </head>
 
@@ -2488,9 +2511,9 @@ body {
     <!-- CAPA - SCROLL 1 -->
     <section id="capa" class="secao visivel">
       <div class="capa-conteudo">
-        <h1>Alfredo</h1>
-        <div class="separador-nomes">&</div>
         <h1>Nachan</h1>
+        <div class="separador-nomes">&</div>
+        <h1>Alfredo</h1>
         <p class="data">04 de Setembro de 2026</p>
         <button id="btnAbrirConvite">Abrir Convite</button>
       </div>
@@ -2696,7 +2719,7 @@ body {
                 <div class="local-evento-elegante">Farol Eventos Katembe</div>
                 <button
                   class="btn-mapa-elegante"
-                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                  onclick="window.open('https://maps.app.goo.gl/cwaVc1VfM6AWh8Wf6?g_st=aw')"
                 >
                   <i class="fas fa-map-marker-alt"></i> Ver no mapa
                 </button>
@@ -2715,7 +2738,7 @@ body {
                 <div class="local-evento-elegante">Farol Eventos Katembe</div>
                 <button
                   class="btn-mapa-elegante"
-                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                  onclick="window.open('https://maps.app.goo.gl/cwaVc1VfM6AWh8Wf6?g_st=aw')"
                 >
                   <i class="fas fa-map-marker-alt"></i> Ver no mapa
                 </button>
@@ -2734,7 +2757,7 @@ body {
                 <div class="local-evento-elegante">Farol Eventos Katembe</div>
                 <button
                   class="btn-mapa-elegante"
-                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                  onclick="window.open('https://maps.app.goo.gl/cwaVc1VfM6AWh8Wf6?g_st=aw')"
                 >
                   <i class="fas fa-map-marker-alt"></i> Ver no mapa
                 </button>
@@ -2753,7 +2776,7 @@ body {
                 <div class="local-evento-elegante">Farol Eventos Katembe</div>
                 <button
                   class="btn-mapa-elegante"
-                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                  onclick="window.open('https://maps.app.goo.gl/cwaVc1VfM6AWh8Wf6?g_st=aw')"
                 >
                   <i class="fas fa-map-marker-alt"></i> Ver no mapa
                 </button>
@@ -2772,7 +2795,7 @@ body {
                 <div class="local-evento-elegante">Farol Eventos Katembe</div>
                 <button
                   class="btn-mapa-elegante"
-                  onclick="window.open('https://maps.app.goo.gl/2MaW9zUR7JvXadyRA','_blank')"
+                  onclick="window.open('https://maps.app.goo.gl/cwaVc1VfM6AWh8Wf6?g_st=aw')"
                 >
                   <i class="fas fa-map-marker-alt"></i> Ver no mapa
                 </button>
@@ -2869,7 +2892,7 @@ body {
     <h2>Confirmação de Presença</h2>
     <div class="rsvp-container-elegante">
       <p style="font-size: 1.3rem; color: var(--cinza-medio); margin-bottom: 20px;">
-        Por favor, confirme sua presença até 30 de Agosto de 2026
+        Por favor, confirme sua presença até 4 de Agosto de 2026
       </p>
       
       <!-- FORMULÁRIO DE CONFIRMAÇÃO -->
@@ -3110,6 +3133,7 @@ textarea {
   font-style: italic;
   opacity: 0.8;
 }
+
 </style>
 
 <script>
@@ -3129,7 +3153,7 @@ document.getElementById("btnConfirmarPresenca")?.addEventListener("click", funct
   const numeroWhatsApp = "258825940600";
   
   // Construir mensagem
-  let textoMensagem = `*CONFIRMAÇÃO DE PRESENÇA - CASAMENTO Alfredo & Nachan*%0A%0A`;
+  let textoMensagem = `*CONFIRMAÇÃO DE PRESENÇA - CASAMENTO Nachan & Alfredo*%0A%0A`;
   textoMensagem += `*Nome:* ${nome}%0A`;
   textoMensagem += `*Presença:* ${presenca}%0A`;
   textoMensagem += `*Acompanhantes:* ${acompanhantes}%0A`;
@@ -3227,11 +3251,11 @@ document.getElementById("btnConfirmarPresenca")?.addEventListener("click", funct
         </div>
       </section>
 
-          <!-- PRESENTES - SCROLL 11 -->
+       <!-- PRESENTES - SCROLL 11 -->
       <section id="presentes" class="secao">
         <div class="conteudo-secao">
           <div class="icone-presente-pulsante">
-            <i class="fas fa-gift"></i>
+            <i class="fas fa-hand-holding-heart"></i>
           </div>
           <h2>Presentes</h2>
           
@@ -3242,54 +3266,67 @@ document.getElementById("btnConfirmarPresenca")?.addEventListener("click", funct
             No entanto, para aqueles que desejarem presentear-nos, optámos por receber contribuições em valor monetário, será recebida com gratidão e carinho.
           </p>
           
+          <!-- BOTÃO PRESENTES MONETÁRIO -->
           <div style="text-align: center; margin-bottom: 30px;">
-  <button class="btn-presente-elegante" 
-    onclick="abrirModalPresente('modalPresentesMonetario')" 
-    style="background: linear-gradient(135deg, var(--dourado), #b8942e); color: white; margin: 0 auto; min-width: 250px; border: none;">
-    <i class="fas fa-money-bill-wave"></i>
-    Presentes Monetário
-  </button>
-</div>
+            <button class="btn-presente-elegante" onclick="abrirModalPresente('modalPresentesMonetario')" style="background: linear-gradient(135deg, var(--dourado), #b8942e); color: white; margin: 0 auto; min-width: 250px; border: none; padding: 18px 40px; font-size: 1.3rem; border-radius: 50px; cursor: pointer; font-family: 'Cormorant Garamond', serif; font-weight: 700; transition: all 0.4s ease; box-shadow: 0 8px 25px rgba(212,175,55,0.3);">
+              <i class="fas fa-money-bill-wave" style="margin-right: 12px;"></i>
+              Presentes Monetário
+            </button>
+          </div>
+
           <!-- MODAL PRESENTES MONETÁRIO -->
           <div id="modalPresentesMonetario" class="modal-presente-elegante">
             <span class="fechar-modal-presente-elegante" onclick="fecharModalPresente('modalPresentesMonetario')">&times;</span>
-            <h3 style="font-family: 'Playfair Display', serif; color: var(--verde-oliva); margin-bottom: 20px; text-align: center;">
-              <i class="fas fa-hand-holding-heart" style="color: var(--dourado); margin-right: 10px;"></i>
+            
+            <h3 style="font-family: 'Playfair Display', serif; color: var(--verde-oliva); margin-bottom: 25px; text-align: center; font-size: 1.8rem;">
+              <i class="fas fa-university" style="color: var(--dourado); margin-right: 12px;"></i>
               Dados Bancários
             </h3>
             
-            <div style="background: linear-gradient(135deg, var(--creme-claro), white); border-radius: 15px; padding: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 4px solid var(--dourado);">
-              
-              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
-                <i class="fas fa-user" style="width: 30px; color: var(--dourado);"></i>
-                <span style="font-weight: 600;">Titular:</span>
-                <span style="margin-left: 10px;">Alfredo António Massambo</span>
+            <div style="width: 80px; height: 2px; background: linear-gradient(90deg, var(--dourado), transparent); margin: -10px auto 25px;"></div>
+            
+            <!-- ===== BANCO BCI ===== -->
+            <div style="background: linear-gradient(135deg, #f8f5f0, #f0ece6); border-radius: 16px; padding: 18px 16px; text-align: center; border: 1.5px solid var(--dourado); box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 12px;">
+              <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 3px;">
+                <i class="fas fa-university" style="color: var(--dourado); font-size: 1.5rem;"></i>
+                <span style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--verde-oliva);">Banco BCI</span>
               </div>
-              
-              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
-                <i class="fas fa-university" style="width: 30px; color: var(--dourado);"></i>
-                <span style="font-weight: 600;">Banco:</span>
-                <span style="margin-left: 10px;">BCI</span>
-              </div>
-              
-              <div style="display: flex; align-items: center; margin-bottom: 15px; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
-                <i class="fas fa-hashtag" style="width: 30px; color: var(--dourado);"></i>
-                <span style="font-weight: 600;">Conta:</span>
-                <span style="margin-left: 10px; font-family: monospace;">9421629510001</span>
-              </div>
-              
-              <div style="display: flex; align-items: center; padding: 12px; background: rgba(212,175,55,0.05); border-radius: 8px;">
-                <i class="fas fa-barcode" style="width: 30px; color: var(--dourado);"></i>
-                <span style="font-weight: 600;">NIB:</span>
-                <span style="margin-left: 10px; font-family: monospace; font-size: 0.9rem;">0008.0000.9421629510180</span>
-              </div>
-              
-              <div style="margin-top: 25px; padding-top: 20px; border-top: 2px dashed var(--dourado); text-align: center;">
-                <p style="font-size: 1.1rem; margin-bottom: 8px;"><i class="fas fa-phone" style="color: var(--dourado); margin-right: 10px;"></i><strong>M-Pesa</strong></p>
-                <p style="font-size: 1.3rem; color: var(--verde-oliva); font-weight: 600;">NACHAN ARROZ</p>
-                <p style="font-size: 1.1rem; color: var(--cinza-medio);">84 8085979</p>
-              </div>
+              <p style="font-size: 1rem; color: var(--cinza-medio); margin: 3px 0 0; font-weight: 500;">Titular: Alfredo António Massambo</p>
             </div>
+            
+            <!-- ===== CONTA ===== -->
+            <div style="background: linear-gradient(135deg, #f8f5f0, #f0ece6); border-radius: 16px; padding: 18px 16px; text-align: center; border: 1.5px solid var(--dourado); box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 12px;">
+              <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 3px;">
+                <i class="fas fa-hashtag" style="color: var(--dourado); font-size: 1.5rem;"></i>
+                <span style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--verde-oliva);">Número de Conta</span>
+              </div>
+              <p style="font-size: 1.8rem; color: var(--cinza-escuro); font-weight: 800; margin: 3px 0 0; font-family: 'Courier New', monospace; letter-spacing: 2px;">9421629510001</p>
+            </div>
+            
+            <!-- ===== NIB ===== -->
+<div style="background: linear-gradient(135deg, #f8f5f0, #f0ece6); border-radius: 16px; padding: 18px 16px; text-align: center; border: 1.5px solid var(--dourado); box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 16px;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 3px;">
+    <i class="fas fa-barcode" style="color: var(--dourado); font-size: 1.3rem;"></i>
+    <span style="font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--verde-oliva);">NIB</span>
+  </div>
+  <p style="font-size: 1rem; color: var(--cinza-escuro); font-weight: 700; margin: 3px 0 0; font-family: 'Courier New', monospace; letter-spacing: 1px; word-break: break-all;">0008.0000.9421629510180</p>
+</div>
+            
+            <!-- ===== M-PESA ===== -->
+            <div style="background: linear-gradient(135deg, #f8f5f0, #f0ece6); border-radius: 16px; padding: 18px 16px; text-align: center; border: 1.5px solid var(--dourado); box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+              <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 3px;">
+                <i class="fas fa-phone" style="color: var(--dourado); font-size: 1.5rem;"></i>
+                <span style="font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--verde-oliva);">M-Pesa</span>
+              </div>
+              <p style="font-size: 1.5rem; color: var(--cinza-escuro); font-weight: 800; margin: 3px 0 2px; font-family: 'Playfair Display', serif;">NACHAN ARROZ</p>
+              <p style="font-size: 1.2rem; color: var(--cinza-medio); font-weight: 600; font-family: 'Courier New', monospace; letter-spacing: 2px;">84 8085979</p>
+            </div>
+            
+            <!-- MENSAGEM DE AGRADECIMENTO -->
+            <p style="text-align: center; margin-top: 22px; font-size: 0.95rem; color: var(--cinza-medio); font-style: italic;">
+              <i class="fas fa-heart" style="color: var(--dourado); margin-right: 8px;"></i>
+              Obrigado por fazer parte deste momento especial
+            </p>
           </div>
         </div>
       </section>
@@ -3298,13 +3335,13 @@ document.getElementById("btnConfirmarPresenca")?.addEventListener("click", funct
   <div class="conteudo-secao">
     <p class="assinatura-elegante">Com amor,</p>
     <h1 style="color: white; font-family: 'Parisienne', cursive; font-size: 3rem; margin-bottom: 10px;">
-      Alfredo & Nachan
+      Nachan & Alfredo
     </h1>
 
-    <div class="iniciais-elegante">L ♡ I</div>
+    <div class="iniciais-elegante">N ♡ A</div>
 
     <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin: 20px 0;">
-      Um convite digital para o casamento de Alfredo e Nachan <br />por
+      Um convite digital para o casamento de Nachan e Alfredo <br />por
       Convites Dourados MZ
     </p>
 
@@ -3455,10 +3492,6 @@ musicaFundo.addEventListener("ended", function() {
           .classList.add("ativa");
         document.getElementById(idAba).classList.add("ativa");
 
-        // Se mudar para "outras mensagens", carregar todas as mensagens
-        if (idAba === "outrasMensagens") {
-          carregarTodasMensagens();
-        }
       }
 
       // Carregar últimas 3 mensagens (sua + 2 outras)
@@ -4086,18 +4119,34 @@ function fecharModalDressCode() {
 function lerNomeDaURL() {
   const params = new URLSearchParams(window.location.search);
   const nome = params.get("nome");
+  const mesa = params.get("mesa");
   const elementoNome = document.getElementById("nomeConvidado");
   const elementoNum = document.getElementById("numPessoas");
 
   if (nome) {
-    elementoNome.textContent = nome;
-    // Contar pessoas pelo "e" ou "&" no nome
-    const temDois = nome.toLowerCase().includes(" e ") || nome.includes("&");
+    const nomeDecodificado = decodeURIComponent(nome);
+    elementoNome.textContent = nomeDecodificado;
+    
+    const temDois = nomeDecodificado.toLowerCase().includes(" e ") || nomeDecodificado.includes("&");
     if (elementoNum) elementoNum.textContent = temDois ? "2" : "1";
+    
+    // ===== MOSTRAR MESA =====
+    if (mesa) {
+      let mesaElement = document.getElementById("mesaConvidado");
+      if (!mesaElement) {
+        mesaElement = document.createElement("div");
+        mesaElement.id = "mesaConvidado";
+        mesaElement.className = "mesa-convidado";
+        elementoNome.parentNode.insertBefore(mesaElement, elementoNome.nextSibling);
+      }
+      // Usar a imagem mesa.png como ícone
+      mesaElement.innerHTML = `<img src="mesa.png" alt="Mesa" style="width: 22px; height: 22px; margin-right: 8px; vertical-align: middle;"> <strong>Mesa: ${mesa}</strong>`;
+    }
   }
 }
 
 lerNomeDaURL();
+
 function animarCardConvidado() {
   const card = document.querySelector(".card-convidado");
   const titulo = document.querySelector("#saudacao h2");
@@ -4323,7 +4372,7 @@ document.getElementById("btnConfirmarPresenca")?.addEventListener("click", funct
     return;
   }
   
-  const numeroWhatsApp = "258827918779";
+  const numeroWhatsApp = "258825940600";
   
   let textoMensagem = `*CONFIRMAÇÃO DE PRESENÇA - CASAMENTO Alfredo & Nachan*%0A%0A`;
   textoMensagem += `*Nome:* ${nome}%0A`;
