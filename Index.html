@@ -768,10 +768,9 @@
       }
 
       /* OS NOIVOS - SCROLL 5 */
-    #os-noivos {
-  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%) !important;
+   #os-noivos {
+  background: linear-gradient(135deg, #d4c5a9 0%, #c4b394 100%) !important;
 }
-
       .container-noivos {
         display: flex;
         flex-wrap: wrap;
@@ -2588,41 +2587,43 @@ body {
         </div>
       </section>
 
-      <!-- OS NOIVOS - SCROLL 4 (AGORA APÓS ARISTÓTELES) -->
-      <section id="os-noivos" class="secao">
-        <div class="conteudo-secao">
-          <h2>Os Noivos</h2>
-          <div class="container-noivos">
-            <div class="noivo">
-              <div class="container-foto-noivo">
-                <img src="Noivo.jpg" alt="Alfredo" class="foto-noivo" />
-              </div>
-              <h3 class="nome-noivo">Alfredo Massambo</h3>
-              <div class="linha-pais"></div>
-              <p class="pais-preto">
-                <strong>Filho de:</strong><br />
-                António M. Massambo(em memória) e Ana Alfredo Tanga
-              </p>
-            </div>
-
-            <div class="coracao-central">
-              <i class="fas fa-heart"></i>
-            </div>
-
-            <div class="noiva">
-              <div class="container-foto-noiva">
-                <img src="Noiva.jpg" alt="Nachan" class="foto-noiva" />
-              </div>
-              <h3 class="nome-noiva"> Nachan Arroz </h3>
-              <div class="linha-pais"></div>
-              <p class="pais-preto">
-                <strong>Filha de:</strong><br />
-                Jaime L. Harrison Arroz (em memória) e Antónia João Paulo da Graça(em memória)
-              </p>
-            </div>
-          </div>
+      <!-- OS NOIVOS - SCROLL 4 -->
+<section id="os-noivos" class="secao">
+  <div class="conteudo-secao">
+    <h2>Os Noivos</h2>
+    <div class="container-noivos">
+      <!-- NOIVA PRIMEIRO (Nachan) -->
+      <div class="noiva">
+        <div class="container-foto-noiva">
+          <img src="Noiva.jpg" alt="Nachan" class="foto-noiva" />
         </div>
-      </section>
+        <h3 class="nome-noiva">Nachan Arroz</h3>
+        <div class="linha-pais"></div>
+        <p class="pais-preto">
+          <strong>Filha de:</strong><br />
+          Jaime L. Harrison Arroz (em memória) e Antónia João Paulo da Graça (em memória)
+        </p>
+      </div>
+
+      <div class="coracao-central">
+        <i class="fas fa-heart"></i>
+      </div>
+
+      <!-- NOIVO DEPOIS (Alfredo) -->
+      <div class="noivo">
+        <div class="container-foto-noivo">
+          <img src="Noivo.jpg" alt="Alfredo" class="foto-noivo" />
+        </div>
+        <h3 class="nome-noivo">Alfredo Massambo</h3>
+        <div class="linha-pais"></div>
+        <p class="pais-preto">
+          <strong>Filho de:</strong><br />
+          António M. Massambo (em memória) e Ana Alfredo Tanga
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- SAUDAÇÃO - SCROLL 5 (ANTIGO SCROLL 3) -->
       <section id="saudacao" class="secao">
@@ -3626,37 +3627,37 @@ musicaFundo.addEventListener("ended", function() {
         });
       }
 
-      // ANIMAÇÃO ESPECÍFICA PARA OS NOIVOS - CORRIGIDA
-      function animarNoivosAoScroll() {
-        const secaoNoivos = document.getElementById("os-noivos");
-        if (!secaoNoivos) return;
+      // ANIMAÇÃO ESPECÍFICA PARA OS NOIVOS - NOIVA PRIMEIRO
+function animarNoivosAoScroll() {
+  const secaoNoivos = document.getElementById("os-noivos");
+  if (!secaoNoivos) return;
 
-        const alturaJanela = window.innerHeight;
-        const topoSecao = secaoNoivos.getBoundingClientRect().top;
-        const alturaSecao = secaoNoivos.offsetHeight;
+  const alturaJanela = window.innerHeight;
+  const topoSecao = secaoNoivos.getBoundingClientRect().top;
 
-        // Verificar se a seção está visível
-        if (topoSecao < alturaJanela * 0.8) {
-          // Primeiro: aparecer o noivo
-          if (noivo && !noivo.classList.contains("visivel")) {
-    setTimeout(() => {
-      noivo.classList.add("visivel");
-    }, 3000);
+  if (topoSecao < alturaJanela * 0.8) {
+    // 1º: NOIVA (Nachan) aparece primeiro
+    if (noiva && !noiva.classList.contains("visivel")) {
+      setTimeout(() => {
+        noiva.classList.add("visivel");
+      }, 3000);
+    }
 
+    // 2º: CORAÇÃO aparece depois
     setTimeout(() => {
       if (coracaoCentral) {
         coracaoCentral.classList.add("visivel");
       }
     }, 4000);
 
+    // 3º: NOIVO (Alfredo) aparece por último
     setTimeout(() => {
-      if (noiva && !noiva.classList.contains("visivel")) {
-        noiva.classList.add("visivel");
+      if (noivo && !noivo.classList.contains("visivel")) {
+        noivo.classList.add("visivel");
       }
     }, 5500);
   }
-          }
-        }
+}
       
 
       // ANIMAÇÃO ESPECÍFICA PARA AGENDA
