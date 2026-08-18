@@ -3707,8 +3707,7 @@ const diaSeguinte = new Date("2026-09-05T00:00:00").toDateString();
         }
 
         // Verificar se é dia seguinte ao casamento (09/08/2026)
-        if (dataHoje === diaSeguinte) {
-          const tituloContador = document.querySelector("#contador h2");
+if (agora > dataCasamento) {          const tituloContador = document.querySelector("#contador h2");
           if (tituloContador) {
             tituloContador.innerHTML = "💍 Finalmente Casados! 💍";
             tituloContador.style.fontSize = "2rem";
@@ -3722,7 +3721,7 @@ const diaSeguinte = new Date("2026-09-05T00:00:00").toDateString();
             contadorContainer.innerHTML = `
         <div style="text-align: center; padding: 40px;">
           <i class="fas fa-check-circle" style="font-size: 4rem; color: #8a9a5b; margin-bottom: 20px;"></i>
-          <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d4af37;">Sim, aceitamos! 💑</h3>
+          <h3 style="font-family: 'Dancing Script', cursive; font-size: 2.5rem; color: #d4af37;">O nosso Sim deu certo! 💑</h3>
           <p style="font-size: 1.5rem; margin-top: 20px;">Obrigado a todos que celebraram este dia especial connosco!</p>
           <p style="font-size: 1.2rem; margin-top: 15px;">Um novo capítulo começa... ❤️</p>
         </div>
